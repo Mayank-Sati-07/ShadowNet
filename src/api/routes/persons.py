@@ -16,7 +16,7 @@ def get_persons(limit: int = 50):
     MATCH (p:Person)
     RETURN
         p.person_id AS person_id,
-        p.name AS name,
+        coalesce(p.name, p.person_id) AS name,
         p.source AS source,
         p.source_role AS source_role,
         p.confidence AS confidence,
@@ -45,7 +45,7 @@ def get_person(person_id: str):
     MATCH (p:Person {person_id: $person_id})
     RETURN
         p.person_id AS person_id,
-        p.name AS name,
+        coalesce(p.name, p.person_id) AS name,
         p.source AS source,
         p.source_role AS source_role,
         p.confidence AS confidence,
@@ -69,6 +69,80 @@ def get_person(person_id: str):
         )
 
     return result[0]
+
+
+@router.get("/{person_id}/network")
+def get_person_network(person_id: str):
+    person = get_person(person_id)
+
+    query = """
+    MATCH (p:Person {person_id: $person_id})-[r]-(other)
+    RETURN
+        coalesce(
+            other.person_id,
+            other.fir_id,
+            other.account_id,
+            other.phone_id,
+            other.vehicle_id,
+            other.location_id,
+            other.organization_id,
+            labels(other)[0]
+        ) AS id,
+        coalesce(
+            other.name,
+            other.person_id,
+            other.fir_id,
+            other.account_id,
+            other.phone_id,
+            other.vehicle_id,
+            other.location_id,
+            other.organization_id,
+            labels(other)[0]
+        ) AS name,
+        labels(other) AS type,
+        type(r) AS relationship
+    ORDER BY type(r), id
+    LIMIT 200
+    """
+
+    connections = neo4j.execute(query, {"person_id": person_id})
+
+    return {
+        "person_id": person_id,
+        "name": person.get("name") or person_id,
+        "degree": person.get("degree"),
+        "degree_centrality": person.get("degree_centrality"),
+        "betweenness": person.get("betweenness"),
+        "pagerank": person.get("pagerank"),
+        "community": person.get("community_id"),
+        "community_size": person.get("community_size"),
+        "connections": connections,
+    }
+
+
+@router.get("/{person_id}/anomalies")
+def get_person_anomalies(person_id: str):
+    query = """
+    MATCH (p:Person {person_id: $person_id})-[r]-(t:Transaction)
+    WHERE coalesce(r.is_anomaly, t.is_anomaly, false) = true
+       OR coalesce(r.anomaly_score, t.anomaly_score, 0) > 0
+    RETURN
+        coalesce(t.id, r.id) AS transaction_id,
+        t.amount AS amount,
+        t.timestamp AS timestamp,
+        coalesce(r.anomaly_score, t.anomaly_score, 0) AS anomaly_score,
+        coalesce(r.is_anomaly, t.is_anomaly, false) AS is_anomaly
+    ORDER BY anomaly_score DESC
+    LIMIT 50
+    """
+
+    rows = neo4j.execute(query, {"person_id": person_id})
+    return {
+        "person_id": person_id,
+        "count": len(rows),
+        "anomalies": rows,
+    }
+
 
 @router.get("/{person_id}/connections")
 def get_connections(person_id: str):

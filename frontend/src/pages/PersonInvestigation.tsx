@@ -64,8 +64,12 @@ export default function PersonInvestigation({
         getPersonAnomalies(id),
       ]);
 
-      setNetwork(networkData);
-      setAnomalies(anomalyData.anomalies);
+      setNetwork({
+        ...networkData,
+        name: networkData.name ?? id,
+        connections: networkData.connections ?? [],
+      });
+      setAnomalies(anomalyData.anomalies ?? []);
     } catch (err) {
       console.error("Person investigation error:", err);
       setError("Unable to load person investigation.");
@@ -141,8 +145,7 @@ export default function PersonInvestigation({
 
               <h1 className="text-xl font-bold text-white">
 
-                {network.name ||
-                  network.person_id}
+                {network.name || network.person_id || "Unknown entity"}
 
               </h1>
 

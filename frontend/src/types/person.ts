@@ -1,5 +1,6 @@
 export interface Person {
   id: string;
+  person_id?: string;
   name: string | null;
   source?: string | null;
   source_role?: string | null;

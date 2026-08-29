@@ -23,6 +23,7 @@ function buildGraph(network: PersonNetwork) {
 
   const nodes: Node[] = [];
   const edges: Edge[] = [];
+  const safeConnections = network.connections ?? [];
 
 
   nodes.push({
@@ -48,11 +49,11 @@ function buildGraph(network: PersonNetwork) {
   });
 
 
-  network.connections.forEach((connection, index) => {
+  safeConnections.forEach((connection, index) => {
 
     const angle =
       (2 * Math.PI * index) /
-      Math.max(network.connections.length, 1);
+      Math.max(safeConnections.length, 1);
 
     const radius = 300;
 

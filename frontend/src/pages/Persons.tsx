@@ -43,15 +43,13 @@ export default function Persons() {
 
 
   const filtered = persons.filter((person) => {
+    const safePerson = {
+      id: person.id ?? person.person_id ?? "unknown",
+      name: person.name ?? person.person_id ?? "Unknown entity",
+    };
 
-    const value =
-      `${person.id} ${person.name || ""}`
-        .toLowerCase();
-
-    return value.includes(
-      search.toLowerCase()
-    );
-
+    const value = `${safePerson.id} ${safePerson.name}`.toLowerCase();
+    return value.includes(search.toLowerCase());
   });
 
 

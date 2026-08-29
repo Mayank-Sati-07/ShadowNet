@@ -14,9 +14,10 @@ export default function Cases() {
   useEffect(() => {
     getCases()
       .then((data) => {
-        setCases(data.cases);
-        if (!selectedCaseId && data.cases.length) {
-          setSelectedCaseId(data.cases[0].id);
+        const safeCases = data.cases ?? [];
+        setCases(safeCases);
+        if (!selectedCaseId && safeCases.length) {
+          setSelectedCaseId(safeCases[0].id);
         }
       })
       .catch((error) => console.error("Cases error:", error));
@@ -115,7 +116,10 @@ export default function Cases() {
 
                 <div className="mt-5 grid grid-cols-2 gap-3 text-sm">
                   <Metric label="Evidence" value={String(item.evidence_count)} />
-                  <Metric label="Owner" value={item.owner.split(" ")[0]} />
+                  <Metric
+                    label="Owner"
+                    value={typeof item.owner === "number" ? String(item.owner) : String(item.owner ?? "Unassigned")}
+                  />
                 </div>
               </button>
             );
