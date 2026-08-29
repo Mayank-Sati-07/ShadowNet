@@ -1,0 +1,17 @@
+FIR No: FIR_425
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 425
+Police Station: Unknown police station
+Year: 2019
+
+Crime records:
+- CRIME_425
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 420
+
+Record completeness: 50.0%
+Average extraction confidence: 0.9325
+Low confidence flag: False

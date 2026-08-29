@@ -1,0 +1,20 @@
+FIR No: FIR_45
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 45
+Police Station: Airport
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0290
+
+Crime records:
+- CRIME_45
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 120B
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8316
+Low confidence flag: False

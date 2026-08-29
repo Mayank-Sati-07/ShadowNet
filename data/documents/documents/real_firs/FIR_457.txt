@@ -1,0 +1,19 @@
+FIR No: FIR_457
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 457
+Police Station: Electronics Complex
+Year: 2020
+
+Crime records:
+- CRIME_457
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 341
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9141
+Low confidence flag: False

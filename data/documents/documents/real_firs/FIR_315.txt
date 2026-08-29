@@ -1,0 +1,22 @@
+FIR No: FIR_315
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 315
+Police Station: Bidhannagar South
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0362
+
+Crime records:
+- CRIME_315
+
+Statutes / sections:
+- Dp Act — Section 4
+- Indian Penal Code (IPC) — Section 34
+- Dp Act — Section 306
+- Dp Act — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9401
+Low confidence flag: False

@@ -1,0 +1,19 @@
+FIR No: FIR_467
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 467
+Police Station: Lake Town
+Year: 2021
+
+Crime records:
+- CRIME_467
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 379
+- Indian Penal Code (IPC) — Section 411
+- Indian Penal Code (IPC) — Section 413
+- Indian Penal Code (IPC) — Section 414
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8057
+Low confidence flag: True

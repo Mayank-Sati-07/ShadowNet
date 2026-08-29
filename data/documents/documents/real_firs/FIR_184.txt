@@ -1,0 +1,19 @@
+FIR No: FIR_184
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 184
+Police Station: Baguiati
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0409
+
+Crime records:
+- CRIME_184
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 406
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8146
+Low confidence flag: True

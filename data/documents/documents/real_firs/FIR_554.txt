@@ -1,0 +1,24 @@
+FIR No: FIR_554
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 554
+Police Station: Nscbi Airport
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0136
+
+Crime records:
+- CRIME_554
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 12
+- P.P.Act — Section 419
+- Indian Penal Code (IPC) — Section 420
+- Indian Penal Code (IPC) — Section 465
+- Indian Penal Code (IPC) — Section 468
+- Indian Penal Code (IPC) — Section 471
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9616
+Low confidence flag: False

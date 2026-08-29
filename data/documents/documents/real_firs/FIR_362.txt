@@ -1,0 +1,23 @@
+FIR No: FIR_362
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 362
+Police Station: Eco Park
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0436
+
+Crime records:
+- CRIME_362
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 325
+- Indian Penal Code (IPC) — Section 354
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9081
+Low confidence flag: False

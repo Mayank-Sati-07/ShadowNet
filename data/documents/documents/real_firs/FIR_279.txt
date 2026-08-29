@@ -1,0 +1,21 @@
+FIR No: FIR_279
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 279
+Police Station: Bidhannagar South
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0107
+
+Crime records:
+- CRIME_279
+
+Statutes / sections:
+- (Para-Ii)/34 Ipc — Section 406
+- (Para-Ii)/34 Ipc — Section 420
+- (Para-Ii)/34 Ipc — Section 467
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9232
+Low confidence flag: False

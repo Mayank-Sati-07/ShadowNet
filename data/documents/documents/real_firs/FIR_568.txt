@@ -1,0 +1,16 @@
+FIR No: FIR_568
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 568
+Police Station: Women
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0454
+
+Crime records:
+- CRIME_568
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9365
+Low confidence flag: False

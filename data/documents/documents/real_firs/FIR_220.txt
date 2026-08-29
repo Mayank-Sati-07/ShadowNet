@@ -1,0 +1,16 @@
+FIR No: FIR_220
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 220
+Police Station: Baguiati
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0379
+
+Crime records:
+- CRIME_220
+
+Record completeness: 75.0%
+Average extraction confidence: 0.818
+Low confidence flag: False

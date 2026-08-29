@@ -1,0 +1,19 @@
+FIR No: FIR_137
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 137
+Police Station: Baguiati
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0058
+
+Crime records:
+- CRIME_137
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 379
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8623
+Low confidence flag: True

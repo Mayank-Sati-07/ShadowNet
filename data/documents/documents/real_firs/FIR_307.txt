@@ -1,0 +1,20 @@
+FIR No: FIR_307
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 307
+Police Station: Unknown police station
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0375
+
+Crime records:
+- CRIME_307
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 419
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9054
+Low confidence flag: False

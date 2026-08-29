@@ -1,0 +1,16 @@
+FIR No: FIR_301
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 301
+Police Station: Bidhannagar South
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0340
+
+Crime records:
+- CRIME_301
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9464
+Low confidence flag: False

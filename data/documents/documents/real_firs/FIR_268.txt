@@ -1,0 +1,20 @@
+FIR No: FIR_268
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 268
+Police Station: Bidhannagar North
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0415
+
+Crime records:
+- CRIME_268
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 506
+- Indian Penal Code (IPC) — Section 509
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9196
+Low confidence flag: False

@@ -1,0 +1,13 @@
+FIR No: FIR_530
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 530
+Police Station: Women
+Year: 2018
+
+Crime records:
+- CRIME_530
+
+Record completeness: 50.0%
+Average extraction confidence: 0.896
+Low confidence flag: False

@@ -1,0 +1,21 @@
+FIR No: FIR_529
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 529
+Police Station: Unknown police station
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0363
+
+Crime records:
+- CRIME_529
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 307
+- Indian Penal Code (IPC) — Section 498A
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8915
+Low confidence flag: False

@@ -1,0 +1,20 @@
+FIR No: FIR_84
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 84
+Police Station: Airport
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0298
+
+Crime records:
+- CRIME_84
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 420
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9236
+Low confidence flag: False

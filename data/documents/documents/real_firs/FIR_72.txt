@@ -1,0 +1,18 @@
+FIR No: FIR_72
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 72
+Police Station: Airport
+Year: 2018
+
+Crime records:
+- CRIME_72
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 342
+- Indian Penal Code (IPC) — Section 374
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8382
+Low confidence flag: False

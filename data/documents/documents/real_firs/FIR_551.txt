@@ -1,0 +1,19 @@
+FIR No: FIR_551
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 551
+Police Station: Women
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0318
+
+Crime records:
+- CRIME_551
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 406
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8437
+Low confidence flag: False

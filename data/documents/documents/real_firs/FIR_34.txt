@@ -1,0 +1,27 @@
+FIR No: FIR_34
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 34
+Police Station: Airport
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0004
+
+Crime records:
+- CRIME_34
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 12
+- Posco Act — Section 114
+- Read With See 8 — Section 116
+- Unspecified — Section 323
+- Indian Penal Code (IPC) — Section 352
+- Indian Penal Code (IPC) — Section 386
+- Indian Penal Code (IPC) — Section 506
+- Indian Penal Code (IPC) — Section 120B
+- Indian Penal Code (IPC) — Section 1860
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8968
+Low confidence flag: False

@@ -1,0 +1,16 @@
+FIR No: FIR_468
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 468
+Police Station: Lake Town
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0216
+
+Crime records:
+- CRIME_468
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9239
+Low confidence flag: False

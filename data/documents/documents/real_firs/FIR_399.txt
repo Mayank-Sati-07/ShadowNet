@@ -1,0 +1,23 @@
+FIR No: FIR_399
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 399
+Police Station: Eco Park
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0197
+
+Crime records:
+- CRIME_399
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 193
+- Indian Penal Code (IPC) — Section 209
+- Indian Penal Code (IPC) — Section 420
+- Indian Penal Code (IPC) — Section 120B
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8244
+Low confidence flag: False

@@ -1,0 +1,20 @@
+FIR No: FIR_126
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 126
+Police Station: Baguiati
+Year: 2019
+
+Persons / linked FIR subjects:
+- FIR_P_0312
+
+Crime records:
+- CRIME_126
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 306
+- Indian Penal Code (IPC) — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9551
+Low confidence flag: False

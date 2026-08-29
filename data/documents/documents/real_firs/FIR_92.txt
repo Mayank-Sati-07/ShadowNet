@@ -1,0 +1,21 @@
+FIR No: FIR_92
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 92
+Police Station: Airport
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0225
+
+Crime records:
+- CRIME_92
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 307
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 326
+
+Record completeness: 100.0%
+Average extraction confidence: 0.7976
+Low confidence flag: False

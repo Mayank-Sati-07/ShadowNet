@@ -1,0 +1,16 @@
+FIR No: FIR_29
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 29
+Police Station: Airport
+Year: 2018
+
+Crime records:
+- CRIME_29
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 379
+
+Record completeness: 75.0%
+Average extraction confidence: 0.7603
+Low confidence flag: True

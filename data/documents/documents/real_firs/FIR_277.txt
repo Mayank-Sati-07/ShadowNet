@@ -1,0 +1,19 @@
+FIR No: FIR_277
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 277
+Police Station: Unknown police station
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0315
+
+Crime records:
+- CRIME_277
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 381
+
+Record completeness: 75.0%
+Average extraction confidence: 0.7246
+Low confidence flag: True

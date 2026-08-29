@@ -1,0 +1,16 @@
+FIR No: FIR_187
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 187
+Police Station: Unknown police station
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0215
+
+Crime records:
+- CRIME_187
+
+Record completeness: 25.0%
+Average extraction confidence: 0.9157
+Low confidence flag: False

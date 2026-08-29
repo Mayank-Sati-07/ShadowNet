@@ -1,0 +1,25 @@
+FIR No: FIR_329
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 329
+Police Station: Cyber-Crime
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0109
+
+Crime records:
+- CRIME_329
+
+Statutes / sections:
+- Unspecified — Section 34
+- Unspecified — Section 419
+- Unspecified — Section 420
+- Unspecified — Section 468
+- Unspecified — Section 469
+- Unspecified — Section 471
+- Unspecified — Section 120B
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8864
+Low confidence flag: False

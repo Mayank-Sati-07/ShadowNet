@@ -1,0 +1,19 @@
+FIR No: FIR_260
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 260
+Police Station: Bidhannagar North
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0346
+
+Crime records:
+- CRIME_260
+
+Statutes / sections:
+- (I) (E) Electricity Act — Section 135
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9311
+Low confidence flag: False

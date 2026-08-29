@@ -1,0 +1,21 @@
+FIR No: FIR_6
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 6
+Police Station: Airport
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0465
+
+Crime records:
+- CRIME_6
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 341
+- Indian Penal Code (IPC) — Section 354
+- Indian Penal Code (IPC) — Section 354B
+
+Record completeness: 75.0%
+Average extraction confidence: 0.916
+Low confidence flag: False

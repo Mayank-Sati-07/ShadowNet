@@ -1,0 +1,19 @@
+FIR No: FIR_283
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 283
+Police Station: Bidhannagar South
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0034
+
+Crime records:
+- CRIME_283
+
+Statutes / sections:
+- (I)(A) Electricity Act. 2003 As Amended 2007 — Section 135
+
+Record completeness: 100.0%
+Average extraction confidence: 0.7474
+Low confidence flag: True

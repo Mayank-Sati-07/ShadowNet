@@ -1,0 +1,21 @@
+FIR No: FIR_535
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 535
+Police Station: Women
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0180
+
+Crime records:
+- CRIME_535
+
+Statutes / sections:
+- D.P. Act — Section 4
+- Indian Penal Code (IPC) — Section 506
+- D.P. Act — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9126
+Low confidence flag: False

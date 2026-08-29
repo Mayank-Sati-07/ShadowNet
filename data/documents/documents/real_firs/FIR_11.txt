@@ -1,0 +1,21 @@
+FIR No: FIR_11
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 11
+Police Station: Airport
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0103
+
+Crime records:
+- CRIME_11
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 420
+- Indian Penal Code (IPC) — Section 120B
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9591
+Low confidence flag: False

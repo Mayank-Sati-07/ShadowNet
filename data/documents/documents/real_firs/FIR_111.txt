@@ -1,0 +1,16 @@
+FIR No: FIR_111
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 111
+Police Station: Baguiati
+Year: 2019
+
+Persons / linked FIR subjects:
+- FIR_P_0228
+
+Crime records:
+- CRIME_111
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9725
+Low confidence flag: False

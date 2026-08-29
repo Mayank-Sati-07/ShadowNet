@@ -1,0 +1,21 @@
+FIR No: FIR_291
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 291
+Police Station: Bidhannagar South
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0140
+
+Crime records:
+- CRIME_291
+
+Statutes / sections:
+- Unspecified — Section 34
+- Unspecified — Section 379
+- Unspecified — Section 427
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8528
+Low confidence flag: False

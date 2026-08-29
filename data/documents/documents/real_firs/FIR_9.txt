@@ -1,0 +1,16 @@
+FIR No: FIR_9
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 9
+Police Station: Unknown police station
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0366
+
+Crime records:
+- CRIME_9
+
+Record completeness: 25.0%
+Average extraction confidence: 0.8887
+Low confidence flag: False

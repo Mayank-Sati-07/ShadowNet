@@ -1,0 +1,16 @@
+FIR No: FIR_427
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 427
+Police Station: Unknown police station
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0045
+
+Crime records:
+- CRIME_427
+
+Record completeness: 50.0%
+Average extraction confidence: 0.7956
+Low confidence flag: False

@@ -1,0 +1,16 @@
+FIR No: FIR_402
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 402
+Police Station: Eco Park
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0295
+
+Crime records:
+- CRIME_402
+
+Record completeness: 50.0%
+Average extraction confidence: 0.772
+Low confidence flag: False

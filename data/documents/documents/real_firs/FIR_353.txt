@@ -1,0 +1,16 @@
+FIR No: FIR_353
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 353
+Police Station: Cyber-Crime
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0120
+
+Crime records:
+- CRIME_353
+
+Record completeness: 75.0%
+Average extraction confidence: 0.6961
+Low confidence flag: True

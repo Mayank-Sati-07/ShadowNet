@@ -1,0 +1,23 @@
+FIR No: FIR_426
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 426
+Police Station: Electronics Complex
+Year: 2022
+
+Persons / linked FIR subjects:
+- FIR_P_0413
+
+Crime records:
+- CRIME_426
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 279
+- Indian Penal Code (IPC) — Section 338
+- Indian Penal Code (IPC) — Section 341
+- Indian Penal Code (IPC) — Section 506
+- Indian Penal Code (IPC) — Section 195A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.912
+Low confidence flag: False

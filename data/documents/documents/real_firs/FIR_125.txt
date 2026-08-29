@@ -1,0 +1,22 @@
+FIR No: FIR_125
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 125
+Police Station: Baguiati
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0132
+
+Crime records:
+- CRIME_125
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 341
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9201
+Low confidence flag: False

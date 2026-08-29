@@ -1,0 +1,24 @@
+FIR No: FIR_538
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 538
+Police Station: Women
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0456
+
+Crime records:
+- CRIME_538
+
+Statutes / sections:
+- D.P Act — Section 3
+- Indian Penal Code (IPC) — Section 4
+- D.P Act — Section 34
+- D.P Act — Section 506
+- D.P Act — Section 354A
+- D.P Act — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8312
+Low confidence flag: False

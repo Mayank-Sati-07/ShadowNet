@@ -1,0 +1,23 @@
+FIR No: FIR_456
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 456
+Police Station: Bidhannagar North
+Year: 2022
+
+Persons / linked FIR subjects:
+- FIR_P_0010
+
+Crime records:
+- CRIME_456
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 24
+- The Maintenance Welfare Of Parents And Senior Citizens Act — Section 34
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 341
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 100.0%
+Average extraction confidence: 0.6686
+Low confidence flag: True

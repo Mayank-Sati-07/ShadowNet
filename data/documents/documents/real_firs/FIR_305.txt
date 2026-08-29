@@ -1,0 +1,18 @@
+FIR No: FIR_305
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 305
+Police Station: Bidhannagar South
+Year: 2017
+
+Crime records:
+- CRIME_305
+
+Statutes / sections:
+- (A)/506/324/406 — Section 3
+- D.P.Act — Section 4
+- (A)/506/324/406 — Section 498
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9233
+Low confidence flag: False

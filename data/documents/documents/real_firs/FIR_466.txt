@@ -1,0 +1,16 @@
+FIR No: FIR_466
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 466
+Police Station: Unknown police station
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0267
+
+Crime records:
+- CRIME_466
+
+Record completeness: 50.0%
+Average extraction confidence: 0.9334
+Low confidence flag: False

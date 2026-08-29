@@ -1,0 +1,16 @@
+FIR No: FIR_343
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 343
+Police Station: Cyber-Crime
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0014
+
+Crime records:
+- CRIME_343
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8953
+Low confidence flag: False

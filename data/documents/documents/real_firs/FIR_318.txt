@@ -1,0 +1,21 @@
+FIR No: FIR_318
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 318
+Police Station: Bidhannagar South
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0406
+
+Crime records:
+- CRIME_318
+
+Statutes / sections:
+- (2)(I)/511/506 Ipc And Section 4/18 Pocso Act — Section 323
+- (2)(I)/511/506 Ipc And Section 4/18 Pocso Act — Section 341
+- (2)(I)/511/506 Ipc And Section 4/18 Pocso Act — Section 376
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8167
+Low confidence flag: False

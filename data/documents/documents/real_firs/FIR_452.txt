@@ -1,0 +1,18 @@
+FIR No: FIR_452
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 452
+Police Station: Electronics Complex
+Year: 2019
+
+Crime records:
+- CRIME_452
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 420
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8977
+Low confidence flag: False

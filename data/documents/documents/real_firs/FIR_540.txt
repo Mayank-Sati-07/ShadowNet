@@ -1,0 +1,20 @@
+FIR No: FIR_540
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 540
+Police Station: Women
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0319
+
+Crime records:
+- CRIME_540
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 506
+- Indian Penal Code (IPC) — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.7021
+Low confidence flag: True

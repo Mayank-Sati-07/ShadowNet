@@ -1,0 +1,19 @@
+FIR No: FIR_376
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 376
+Police Station: Unknown police station
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0184
+
+Crime records:
+- CRIME_376
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 363
+
+Record completeness: 50.0%
+Average extraction confidence: 0.7914
+Low confidence flag: False

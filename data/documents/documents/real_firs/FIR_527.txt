@@ -1,0 +1,16 @@
+FIR No: FIR_527
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 527
+Police Station: Women
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0177
+
+Crime records:
+- CRIME_527
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9529
+Low confidence flag: False

@@ -1,0 +1,19 @@
+FIR No: FIR_361
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 361
+Police Station: Eco Park
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0221
+
+Crime records:
+- CRIME_361
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 380
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9264
+Low confidence flag: False

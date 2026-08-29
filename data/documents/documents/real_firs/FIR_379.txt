@@ -1,0 +1,19 @@
+FIR No: FIR_379
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 379
+Police Station: Eco Park
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0144
+
+Crime records:
+- CRIME_379
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 379
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9163
+Low confidence flag: False

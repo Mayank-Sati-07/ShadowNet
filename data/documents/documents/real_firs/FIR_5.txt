@@ -1,0 +1,27 @@
+FIR No: FIR_5
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 5
+Police Station: Airport
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0224
+
+Crime records:
+- CRIME_5
+
+Statutes / sections:
+- Dp Act — Section 3
+- Unspecified — Section 4
+- Dp Act — Section 34
+- Dp Act — Section 307
+- Dp Act — Section 323
+- Dp Act — Section 406
+- Dp Act — Section 497
+- Dp Act — Section 506
+- Dp Act — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.7479
+Low confidence flag: True

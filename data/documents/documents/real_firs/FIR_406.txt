@@ -1,0 +1,19 @@
+FIR No: FIR_406
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 406
+Police Station: Eco Park
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0390
+
+Crime records:
+- CRIME_406
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 188
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9204
+Low confidence flag: False

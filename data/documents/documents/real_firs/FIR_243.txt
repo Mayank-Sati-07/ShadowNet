@@ -1,0 +1,16 @@
+FIR No: FIR_243
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 243
+Police Station: Bidhannagar North
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0462
+
+Crime records:
+- CRIME_243
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9131
+Low confidence flag: False

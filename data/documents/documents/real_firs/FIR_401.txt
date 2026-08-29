@@ -1,0 +1,19 @@
+FIR No: FIR_401
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 401
+Police Station: Eco Park
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0336
+
+Crime records:
+- CRIME_401
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 420
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8724
+Low confidence flag: False

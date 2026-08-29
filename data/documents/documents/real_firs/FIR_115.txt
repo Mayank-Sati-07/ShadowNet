@@ -1,0 +1,22 @@
+FIR No: FIR_115
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 115
+Police Station: Baguiati
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0094
+
+Crime records:
+- CRIME_115
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 451
+- Indian Penal Code (IPC) — Section 452
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9183
+Low confidence flag: False

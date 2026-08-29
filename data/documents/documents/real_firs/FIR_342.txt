@@ -1,0 +1,22 @@
+FIR No: FIR_342
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 342
+Police Station: Cyber-Crime
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0200
+
+Crime records:
+- CRIME_342
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 419
+- Indian Penal Code (IPC) — Section 420
+- Indian Penal Code (IPC) — Section 120B
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8258
+Low confidence flag: True

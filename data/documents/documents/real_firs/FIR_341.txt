@@ -1,0 +1,23 @@
+FIR No: FIR_341
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 341
+Police Station: Cyber-Crime
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0236
+
+Crime records:
+- CRIME_341
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 500
+- Indian Penal Code (IPC) — Section 507
+- Indian Penal Code (IPC) — Section 509
+- Indian Penal Code (IPC) — Section 354A
+- Indian Penal Code (IPC) — Section 354D
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8686
+Low confidence flag: False

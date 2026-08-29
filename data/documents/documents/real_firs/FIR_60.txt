@@ -1,0 +1,20 @@
+FIR No: FIR_60
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 60
+Police Station: Airport
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0064
+
+Crime records:
+- CRIME_60
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 363
+- Indian Penal Code (IPC) — Section 365
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8081
+Low confidence flag: False

@@ -1,0 +1,28 @@
+FIR No: FIR_269
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 269
+Police Station: Bidhannagar North
+Year: 2017
+
+Crime records:
+- CRIME_269
+
+Statutes / sections:
+- /W.B.M.O.P.O Act 1972 — Section 3
+- Indian Penal Code (IPC) — Section 8
+- P.D.P.P Act — Section 9
+- /W.B.M.O.P.O Act 1972 — Section 143
+- /W.B.M.O.P.O Act 1972 — Section 186
+- /W.B.M.O.P.O Act 1972 — Section 188
+- /W.B.M.O.P.O Act 1972 — Section 307
+- /W.B.M.O.P.O Act 1972 — Section 323
+- /W.B.M.O.P.O Act 1972 — Section 325
+- /W.B.M.O.P.O Act 1972 — Section 353
+- /W.B.M.O.P.O Act 1972 — Section 427
+- /W.B.M.O.P.O Act 1972 — Section 506
+- /W.B.M.O.P.O Act 1972 — Section 120B
+
+Record completeness: 75.0%
+Average extraction confidence: 0.829
+Low confidence flag: False

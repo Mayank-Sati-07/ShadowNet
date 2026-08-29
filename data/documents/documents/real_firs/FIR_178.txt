@@ -1,0 +1,23 @@
+FIR No: FIR_178
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 178
+Police Station: Baguiati
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0092
+
+Crime records:
+- CRIME_178
+
+Statutes / sections:
+- B Ipc — Section 120
+- B Ipc — Section 406
+- B Ipc — Section 420
+- B Ipc — Section 468
+- B Ipc — Section 471
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9123
+Low confidence flag: False

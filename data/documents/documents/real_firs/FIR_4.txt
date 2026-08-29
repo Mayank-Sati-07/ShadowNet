@@ -1,0 +1,18 @@
+FIR No: FIR_4
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 4
+Police Station: Unknown police station
+Year: Unknown
+
+Crime records:
+- CRIME_4
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 326
+- Indian Penal Code (IPC) — Section 448
+- Indian Penal Code (IPC) — Section 498A
+
+Record completeness: 25.0%
+Average extraction confidence: 0.6627
+Low confidence flag: False

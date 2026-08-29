@@ -1,0 +1,29 @@
+FIR No: FIR_314
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 314
+Police Station: Bidhannagar South
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0037
+
+Crime records:
+- CRIME_314
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 341
+- Indian Penal Code (IPC) — Section 380
+- Indian Penal Code (IPC) — Section 387
+- Indian Penal Code (IPC) — Section 427
+- Indian Penal Code (IPC) — Section 451
+- Indian Penal Code (IPC) — Section 454
+- Indian Penal Code (IPC) — Section 467
+- Indian Penal Code (IPC) — Section 468
+- Indian Penal Code (IPC) — Section 471
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9141
+Low confidence flag: False

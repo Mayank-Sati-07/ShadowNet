@@ -1,0 +1,21 @@
+FIR No: FIR_345
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 345
+Police Station: Cyber-Crime
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0159
+
+Crime records:
+- CRIME_345
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 419
+- Indian Penal Code (IPC) — Section 420
+- Indian Penal Code (IPC) — Section 120B
+
+Record completeness: 75.0%
+Average extraction confidence: 0.7576
+Low confidence flag: True

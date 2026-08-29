@@ -1,0 +1,16 @@
+FIR No: FIR_544
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 544
+Police Station: Nscbi Airport
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0185
+
+Crime records:
+- CRIME_544
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8614
+Low confidence flag: False

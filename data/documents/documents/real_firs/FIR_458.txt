@@ -1,0 +1,25 @@
+FIR No: FIR_458
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 458
+Police Station: Electronics Complex
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0133
+
+Crime records:
+- CRIME_458
+
+Statutes / sections:
+- Arms Act — Section 25
+- Indian Penal Code (IPC) — Section 27
+- Arms Act — Section 34
+- Arms Act — Section 307
+- Arms Act — Section 325
+- Arms Act — Section 341
+- Arms Act — Section 506
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9616
+Low confidence flag: False

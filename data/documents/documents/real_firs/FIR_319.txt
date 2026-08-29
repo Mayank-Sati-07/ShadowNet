@@ -1,0 +1,23 @@
+FIR No: FIR_319
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 319
+Police Station: Bidhannagar South
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0077
+
+Crime records:
+- CRIME_319
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 325
+- Indian Penal Code (IPC) — Section 364
+- Indian Penal Code (IPC) — Section 365
+- Indian Penal Code (IPC) — Section 382
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8605
+Low confidence flag: False

@@ -1,0 +1,19 @@
+FIR No: FIR_536
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 536
+Police Station: Women
+Year: 2017
+
+Crime records:
+- CRIME_536
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 326
+- Indian Penal Code (IPC) — Section 341
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8084
+Low confidence flag: False

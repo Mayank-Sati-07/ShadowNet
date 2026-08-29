@@ -1,0 +1,24 @@
+FIR No: FIR_127
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 127
+Police Station: Baguiati
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0389
+
+Crime records:
+- CRIME_127
+
+Statutes / sections:
+- Disaster Management Act — Section 34
+- Indian Penal Code (IPC) — Section 51
+- Disaster Management Act — Section 188
+- Disaster Management Act — Section 269
+- Disaster Management Act — Section 270
+- Disaster Management Act — Section 271
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9062
+Low confidence flag: False

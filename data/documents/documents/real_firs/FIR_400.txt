@@ -1,0 +1,16 @@
+FIR No: FIR_400
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 400
+Police Station: Eco Park
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0048
+
+Crime records:
+- CRIME_400
+
+Record completeness: 50.0%
+Average extraction confidence: 0.8534
+Low confidence flag: False
