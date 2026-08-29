@@ -18,6 +18,8 @@ from src.api.routes import graph_rag
 from src.api.routes import investigation
 from src.api.routes import anomalies
 from src.api.routes import transactions
+from src.api.routes import documents
+from src.api.routes import search
 
 app = FastAPI(
     title="CNAS API",
@@ -79,6 +81,8 @@ app.include_router(graph_rag.router)
 app.include_router(investigation.router)
 app.include_router(anomalies.router)
 app.include_router(transactions.router)
+app.include_router(documents.router)
+app.include_router(search.router)
 
 
 @app.get("/")

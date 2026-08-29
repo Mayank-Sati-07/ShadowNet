@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import {
   getNetworkStats,
@@ -8,163 +9,160 @@ import {
   type NetworkStatsResponse,
 } from "../api/network";
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1 }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } }
+};
+
 export default function Dashboard() {
   const navigate = useNavigate();
 
   const [stats, setStats] = useState<NetworkStatsResponse | null>(null);
   const [topPersons, setTopPersons] = useState<NetworkPerson[]>([]);
   const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadDashboard() {
       try {
-        setLoading(true);
-        setError(null);
-
         const network = await getNetworkStats();
         const top = await getTopPersons("pagerank", 10);
-
         setStats(network);
         setTopPersons(top.persons ?? []);
       } catch (err) {
         console.error("Dashboard error:", err);
-        setError("Unable to load CNAS backend data.");
-      } finally {
-        setLoading(false);
+        setError("Unable to load CNAS backend");
       }
     }
-
     void loadDashboard();
   }, []);
 
   if (error) {
     return (
-      <div className="min-h-screen bg-slate-950 p-6 text-slate-100">
-        <div className="mx-auto max-w-2xl rounded-2xl border border-red-500/40 bg-red-950/30 p-8 shadow-xl">
-          <h2 className="text-2xl font-bold text-red-300">CNAS Backend Error</h2>
-          <p className="mt-3 text-red-100">{error}</p>
-          <p className="mt-3 text-sm text-red-200/80">
-            Make sure the FastAPI backend is running and the Neo4j data layer is available.
-          </p>
+      <div className="flex h-full items-center justify-center p-10">
+        <div className="border border-[var(--color-destructive)]/30 bg-[var(--color-destructive)]/10 p-6 rounded-xl text-[var(--color-destructive)] backdrop-blur-sm max-w-lg w-full text-center shadow-sm">
+          <h2 className="text-xl font-bold">CNAS Backend Error</h2>
+          <p className="mt-2 text-[var(--color-destructive)]/80">{error}</p>
+          <p className="mt-4 text-sm text-[var(--color-destructive)]/60">Make sure the FastAPI backend is running.</p>
         </div>
       </div>
     );
   }
 
-  if (loading || !stats) {
+  if (!stats) {
     return (
-      <div className="min-h-screen bg-slate-950 p-6 text-slate-100">
-        <div className="mx-auto max-w-3xl rounded-2xl border border-slate-800 bg-slate-900/60 p-8">
-          <div className="h-3 w-32 animate-pulse rounded-full bg-slate-700" />
-          <div className="mt-6 grid gap-4 md:grid-cols-4">
-            {[...Array(4)].map((_, i) => (
-              <div key={i} className="h-28 animate-pulse rounded-xl bg-slate-800" />
-            ))}
-          </div>
+      <div className="flex min-h-[60vh] items-center justify-center">
+        <div className="text-xl font-semibold text-[var(--color-muted-foreground)] flex items-center gap-3">
+          <div className="h-5 w-5 rounded-full border-2 border-[var(--color-primary)] border-t-transparent animate-spin" />
+          Loading CNAS...
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 p-6 text-slate-100">
-      <div className="mx-auto max-w-7xl">
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-blue-400">Intelligence overview</p>
-            <h1 className="mt-2 text-3xl font-bold text-white">CNAS Command Center</h1>
-            <p className="mt-2 text-sm text-slate-400">Criminal Network Intelligence Platform</p>
-          </div>
+    <div className="pb-10">
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold tracking-tight text-[var(--color-foreground)]">
+          CNAS Command Center
+        </h1>
+        <p className="mt-2 text-[var(--color-muted-foreground)]">
+          Criminal Network Intelligence Platform
+        </p>
+      </div>
 
+      <motion.div 
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+        className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4"
+      >
+        <StatCard title="Total Nodes" value={stats.total_nodes} />
+        <StatCard title="Persons" value={stats.entities?.Person} />
+        <StatCard title="FIRs" value={stats.entities?.FIR} />
+        <StatCard title="Transactions" value={stats.entities?.Transaction} />
+      </motion.div>
+
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4, duration: 0.4 }}
+        className="mt-10"
+      >
+        <div className="mb-4 flex items-center justify-between">
+          <div>
+            <h2 className="text-xl font-bold text-[var(--color-foreground)]">Top Network Actors</h2>
+            <p className="text-sm text-[var(--color-muted-foreground)]">Ranked by PageRank</p>
+          </div>
           <button
             onClick={() => navigate("/network")}
-            className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-500"
+            className="bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/20 px-4 py-2 text-sm font-medium text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white rounded-lg transition-all duration-300 shadow-sm"
           >
-            Open Network
+            Open Network Explorer
           </button>
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
-          <StatCard title="Total Nodes" value={stats.total_nodes} accent="blue" />
-          <StatCard title="Persons" value={stats.entities?.Person ?? 0} accent="cyan" />
-          <StatCard title="FIRs" value={stats.entities?.FIR ?? 0} accent="violet" />
-          <StatCard title="Transactions" value={stats.entities?.Transaction ?? 0} accent="emerald" />
-        </div>
-
-        <div className="mt-10 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 shadow-lg shadow-slate-950/30">
-          <div className="mb-4 flex items-center justify-between">
-            <div>
-              <h2 className="text-xl font-bold text-white">Top Network Actors</h2>
-              <p className="text-sm text-slate-400">Ranked by PageRank</p>
-            </div>
-          </div>
-
-          <div className="overflow-hidden rounded-xl border border-slate-800 bg-slate-950/40">
-            <table className="w-full">
-              <thead className="bg-slate-800/80 text-left text-xs uppercase tracking-wider text-slate-400">
+        <div className="overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] shadow-sm">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-[var(--color-muted)] text-[var(--color-muted-foreground)] border-b border-[var(--color-border)]">
+              <tr>
+                <th className="p-4 font-medium border-b border-[var(--color-border)]">Person ID</th>
+                <th className="p-4 font-medium border-b border-[var(--color-border)]">Degree</th>
+                <th className="p-4 font-medium border-b border-[var(--color-border)]">PageRank</th>
+                <th className="p-4 font-medium border-b border-[var(--color-border)]">Community</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[var(--color-border)]">
+              {topPersons.length === 0 ? (
                 <tr>
-                  <th className="p-3">Person</th>
-                  <th className="p-3">Degree</th>
-                  <th className="p-3">PageRank</th>
-                  <th className="p-3">Community</th>
+                  <td colSpan={4} className="p-8 text-center text-[var(--color-muted-foreground)]">
+                    No persons found.
+                  </td>
                 </tr>
-              </thead>
-
-              <tbody>
-                {topPersons.length === 0 ? (
-                  <tr>
-                    <td colSpan={4} className="p-6 text-center text-slate-400">
-                      No persons found.
+              ) : (
+                topPersons.map((person) => (
+                  <tr
+                    key={person.person_id}
+                    onClick={() => navigate(`/persons/${person.person_id}`)}
+                    className="cursor-pointer transition-colors hover:bg-[var(--color-muted)]"
+                  >
+                    <td className="p-4 font-medium text-[var(--color-foreground)]">{person.person_id}</td>
+                    <td className="p-4 text-[var(--color-foreground)]">{person.degree ?? 0}</td>
+                    <td className="p-4 text-[var(--color-muted-foreground)] font-mono text-xs">
+                      {typeof person.pagerank === "number" ? person.pagerank.toFixed(6) : "0.000000"}
+                    </td>
+                    <td className="p-4">
+                       <span className="rounded-lg border border-[var(--color-primary)]/30 bg-[var(--color-primary)]/10 px-3 py-1 text-xs font-medium text-[var(--color-primary)]">
+                         {person.community_id ?? "N/A"}
+                       </span>
                     </td>
                   </tr>
-                ) : (
-                  topPersons.map((person, index) => (
-                    <tr
-                      key={`${person.person_id ?? "person"}-${index}`}
-                      onClick={() => navigate(`/persons/${encodeURIComponent(person.person_id ?? "")}`)}
-                      className="cursor-pointer border-t border-slate-800 transition hover:bg-slate-800/50"
-                    >
-                      <td className="p-3 font-medium text-white">
-                        {person.name || person.person_id || "Unknown entity"}
-                      </td>
-                      <td className="p-3 text-slate-300">{person.degree ?? 0}</td>
-                      <td className="p-3 text-slate-300">
-                        {typeof person.pagerank === "number" ? person.pagerank.toFixed(6) : "0.000000"}
-                      </td>
-                      <td className="p-3 text-slate-300">{person.community_id ?? "N/A"}</td>
-                    </tr>
-                  ))
-                )}
-              </tbody>
-            </table>
-          </div>
+                ))
+              )}
+            </tbody>
+          </table>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
 
-function StatCard({
-  title,
-  value,
-  accent,
-}: {
-  title: string;
-  value?: number | string | null;
-  accent: "blue" | "cyan" | "violet" | "emerald";
-}) {
-  const accentClasses = {
-    blue: "border-blue-500/30 bg-blue-500/10 text-blue-300",
-    cyan: "border-cyan-500/30 bg-cyan-500/10 text-cyan-300",
-    violet: "border-violet-500/30 bg-violet-500/10 text-violet-300",
-    emerald: "border-emerald-500/30 bg-emerald-500/10 text-emerald-300",
-  };
-
+function StatCard({ title, value }: { title: string; value?: number | string | null }) {
   return (
-    <div className={`rounded-2xl border p-5 shadow-lg shadow-slate-950/20 ${accentClasses[accent]}`}>
-      <p className="text-sm text-slate-300">{title}</p>
-      <h2 className="mt-3 text-3xl font-bold text-white">{value ?? 0}</h2>
-    </div>
+    <motion.div 
+      variants={itemVariants}
+      className="rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-6 hover:border-[var(--color-primary)]/30 transition-all duration-300 relative overflow-hidden group shadow-sm hover:shadow-md"
+    >
+      <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-[var(--color-primary)]/5 blur-3xl group-hover:bg-[var(--color-primary)]/15 transition-colors duration-500" />
+      <p className="text-sm font-medium text-[var(--color-muted-foreground)]">{title}</p>
+      <h2 className="mt-3 text-4xl font-bold tracking-tight text-[var(--color-foreground)]">{value ?? 0}</h2>
+    </motion.div>
   );
 }

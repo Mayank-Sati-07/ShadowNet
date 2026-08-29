@@ -10,78 +10,64 @@ load_dotenv()
 class Neo4jClient:
 
     def __init__(self):
+        self.uri = os.getenv("NEO4J_URI", "bolt://localhost:7687")
+        self.username = os.getenv("NEO4J_USERNAME", "neo4j")
+        self.password = os.getenv("NEO4J_PASSWORD", "cnas_password")
+        self.driver = None
 
-        uri = os.getenv("NEO4J_URI")
-        username = os.getenv("NEO4J_USERNAME")
-        password = os.getenv("NEO4J_PASSWORD")
-
-        if not uri:
-            raise ValueError("NEO4J_URI is missing")
-
-        if not username:
-            raise ValueError("NEO4J_USERNAME is missing")
-
-        if not password:
-            raise ValueError("NEO4J_PASSWORD is missing")
-
-        self.driver = GraphDatabase.driver(
-            uri,
-            auth=(username, password)
-        )
+    def _get_driver(self):
+        if self.driver is None:
+            self.driver = GraphDatabase.driver(
+                self.uri,
+                auth=(self.username, self.password),
+            )
+        return self.driver
 
     def verify_connection(self):
-
-        self.driver.verify_connectivity()
-
-        print("✓ Neo4j connection successful")
+        try:
+            self._get_driver().verify_connectivity()
+            print("✓ Neo4j connection successful")
+            return True
+        except Exception as exc:  # pragma: no cover - defensive runtime handling
+            print(f"⚠ Neo4j unavailable: {exc}")
+            return False
 
     def execute(self, query, parameters=None):
-
         """
         Execute a write/query operation.
 
         Returns ResultSummary.
         """
-
-        with self.driver.session() as session:
-
-            result = session.run(
-                query,
-                parameters or {}
-            )
-
-            return result.consume()
+        try:
+            with self._get_driver().session() as session:
+                result = session.run(query, parameters or {})
+                return result.consume()
+        except Exception:
+            return None
 
     def execute_read(self, query, parameters=None):
-
         """
         Execute a read query and return all records.
         """
-
-        with self.driver.session() as session:
-
-            result = session.run(
-                query,
-                parameters or {}
-            )
-
-            return list(result)
+        try:
+            with self._get_driver().session() as session:
+                result = session.run(query, parameters or {})
+                return list(result)
+        except Exception:
+            return []
 
     def execute_write(self, query, parameters=None):
-
         """
         Execute a write query.
         """
-
-        with self.driver.session() as session:
-
-            result = session.run(
-                query,
-                parameters or {}
-            )
-
-            return result.consume()
+        try:
+            with self._get_driver().session() as session:
+                result = session.run(query, parameters or {})
+                return result.consume()
+        except Exception:
+            return None
 
     def close(self):
-
-        self.driver.close()
+        if self.driver is not None:
+            self.driver.close()
+            self.driver = None

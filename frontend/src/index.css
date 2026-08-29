@@ -1,14 +1,42 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  /* Vibrant Indigo & Violet - Colorful and modern */
+  --color-primary: #6366F1; /* Indigo 500 */
+  --color-on-primary: #FFFFFF;
+  --color-secondary: #8B5CF6; /* Violet 500 */
+  --color-on-secondary: #FFFFFF;
+  --color-accent: #EC4899; /* Pink 500 */
+  --color-on-accent: #FFFFFF;
+  
+  /* Slightly tinted light background */
+  --color-background: #F8FAFC; /* Slate 50 */
+  --color-foreground: #0F172A; /* Slate 900 */
+  
+  --color-card: #FFFFFF;
+  --color-card-foreground: #0F172A;
+  
+  --color-muted: #F1F5F9; /* Slate 100 */
+  --color-muted-foreground: #64748B; /* Slate 500 */
+  
+  --color-border: #E2E8F0; /* Slate 200 */
+  
+  --color-destructive: #EF4444; /* Red 500 */
+  --color-on-destructive: #FFFFFF;
+  --color-ring: #8B5CF6;
+
+  --shadow-glow: 0 8px 30px rgba(99, 102, 241, 0.25);
+}
 
 :root {
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
-
-  color: #e5e7eb;
-  background: #070b14;
-
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--color-foreground);
+  background-color: var(--color-background);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -19,7 +47,8 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: #070b14;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 button,

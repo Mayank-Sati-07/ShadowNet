@@ -1,5 +1,6 @@
-from neo4j import GraphDatabase
 import os
+
+from neo4j import GraphDatabase
 
 
 class Neo4jService:
@@ -8,19 +9,25 @@ class Neo4jService:
         self.uri = os.getenv("NEO4J_URI", "bolt://localhost:7687")
         self.username = os.getenv("NEO4J_USERNAME", "neo4j")
         self.password = os.getenv("NEO4J_PASSWORD", "cnas_password")
+        self.driver = None
 
-        self.driver = GraphDatabase.driver(
-            self.uri,
-            auth=(self.username, self.password)
-        )
+    def _get_driver(self):
+        if self.driver is None:
+            self.driver = GraphDatabase.driver(
+                self.uri,
+                auth=(self.username, self.password),
+            )
+        return self.driver
 
     def close(self):
-        self.driver.close()
+        if self.driver is not None:
+            self.driver.close()
+            self.driver = None
 
     def execute(self, query, parameters=None):
-        with self.driver.session() as session:
-            result = session.run(
-                query,
-                parameters or {}
-            )
-            return [record.data() for record in result]
+        try:
+            with self._get_driver().session() as session:
+                result = session.run(query, parameters or {})
+                return [record.data() for record in result]
+        except Exception:
+            return []
