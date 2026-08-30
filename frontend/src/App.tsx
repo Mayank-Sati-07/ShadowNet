@@ -2,7 +2,6 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  useParams,
 } from "react-router-dom";
 
 import AppLayout from "./components/layout/AppLayout";
@@ -19,16 +18,7 @@ import Documents from "./pages/Documents";
 
 
 function PersonRoute() {
-
-  const {
-    personId,
-  } = useParams();
-
-  return (
-    <PersonInvestigation
-      personId={personId}
-    />
-  );
+  return <PersonInvestigation />;
 }
 
 

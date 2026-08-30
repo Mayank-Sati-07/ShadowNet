@@ -10,6 +10,18 @@ router = APIRouter(
 )
 
 
+def _serialize_value(value):
+    if value is None:
+        return None
+    if hasattr(value, "isoformat"):
+        return value.isoformat()
+    if isinstance(value, dict):
+        return {key: _serialize_value(val) for key, val in value.items()}
+    if isinstance(value, list):
+        return [_serialize_value(item) for item in value]
+    return value
+
+
 @router.get("")
 def list_anomalies(
     limit: int = Query(100, ge=1, le=1000),
@@ -36,10 +48,14 @@ def list_anomalies(
         {"limit": limit}
     )
 
+    serialized = []
+    for record in records:
+        item = dict(record)
+        item["transaction_id"] = item.get("transaction_id") or "UNKNOWN_TRANSACTION"
+        item["timestamp"] = _serialize_value(item.get("timestamp"))
+        serialized.append(item)
+
     return {
-        "count": len(records),
-        "anomalies": [
-            dict(record)
-            for record in records
-        ]
+        "count": len(serialized),
+        "anomalies": serialized,
     }

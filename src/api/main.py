@@ -85,6 +85,44 @@ app.include_router(documents.router)
 app.include_router(search.router)
 
 
+# Some FastAPI router wrappers (used internally) may nest route lists under an
+# object that does not expose a `path` attribute. For tests and tooling that
+# expect `APIRoute` entries directly on `app.routes`, flatten any such
+# wrappers by recursively expanding `routes` attributes. This avoids relying
+# on private FastAPI internals while making the final route list discoverable.
+def _flatten(routes):
+    out = []
+    for r in routes:
+        # FastAPI may wrap an APIRouter in an internal `_IncludedRouter` which
+        # exposes the original router under `original_router`. Prefer that
+        # when present so we can expand the underlying `routes` list.
+        if hasattr(r, "original_router"):
+            try:
+                out.extend(_flatten(r.original_router.routes))
+                continue
+            except Exception:
+                pass
+
+        # Fallback: if the object exposes a `routes` attribute and does not
+        # represent a concrete route (no `path`), expand it recursively.
+        if hasattr(r, "routes") and getattr(r, "path", None) is None:
+            try:
+                out.extend(_flatten(r.routes))
+                continue
+            except Exception:
+                pass
+
+        out.append(r)
+    return out
+
+
+try:
+    app.router.routes = _flatten(app.router.routes)
+except Exception:
+    # Non-fatal: leave routes as-is if flattening fails
+    pass
+
+
 @app.get("/")
 def root():
     return {

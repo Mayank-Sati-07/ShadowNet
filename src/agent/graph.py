@@ -53,12 +53,17 @@ class CNASInvestigationAgent:
 
         self.entity_extractor = EntityExtractor()
 
-        self.llm = ChatGoogleGenerativeAI(
-            model="gemini-3.6-flash",
-            temperature=0
-        )
+        # Delay heavy LLM initialization until first use
+        self._llm = None
 
         self.graph = self._build_graph()
+
+    @property
+    def llm(self):
+        if self._llm is None:
+            print("[INFO] Initializing LLM lazily (this may require valid Google credentials)")
+            self._llm = ChatGoogleGenerativeAI(model="gemini-3.6-flash", temperature=0)
+        return self._llm
 
     # =========================================================
     # ROUTER

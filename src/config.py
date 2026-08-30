@@ -13,6 +13,7 @@ class Settings(BaseSettings):
     neo4j_password: str = Field(default="cnas_password")
     pinecone_api_key: str | None = Field(default=None)
     google_api_key: str | None = Field(default=None)
+    allow_runtime_embeddings: bool = Field(default=False, alias="ALLOW_RUNTIME_EMBEDDINGS")
     allowed_origins_raw: str = Field(
         default="http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000",
         alias="ALLOWED_ORIGINS",

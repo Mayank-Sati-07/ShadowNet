@@ -998,6 +998,64 @@ CNAS follows a layered architecture:
                 └───────────────────┼───────────────────┘
                                     ▼
                          ┌────────────────────┐
+
+---
+
+## 🛠️ Quickstart — Setup, Ingest, Test
+
+Follow these condensed steps to run CNAS locally for development and testing.
+
+1) Create Python virtual environment and install dependencies:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+2) Run backend (development):
+
+```bash
+export PYTHONPATH=$(pwd)
+.venv/bin/uvicorn src.api.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+3) Frontend (optional):
+
+```bash
+cd frontend
+npm ci
+npm run dev
+```
+
+4) Run tests:
+
+```bash
+export PYTHONPATH=$(pwd)
+.venv/bin/python -m pytest tests -q
+```
+
+5) Dry-run ingestion (safe, no external services):
+
+```python
+from src.rag.ingest import FIRIngestor
+ingestor = FIRIngestor()
+vectors = ingestor.ingest('data/documents/sample_fir.txt', 'SAMPLE_FIR_DRY', dry_run=True)
+print(len(vectors))
+```
+
+Vectors are cached to `data/processed/vectors/{document_id}.json` for idempotent reads.
+
+---
+
+## 🔁 CI / Automation
+
+A GitHub Actions workflow is provided at `.github/workflows/ci.yml` to run backend
+tests and build the frontend on pushes and pull requests. Ensure any secrets
+(`PINECONE_API_KEY`, `NEO4J_*`, `GOOGLE_API_KEY`) are configured in your
+repository settings if you enable full integration tests.
+
                          │  Graph Intelligence│
                          │ NetworkX / Neo4j   │
                          └──────────┬─────────┘

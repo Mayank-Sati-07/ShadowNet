@@ -7,10 +7,16 @@ class FIRAnswerGenerator:
 
     def __init__(self):
 
-        self.llm = ChatGoogleGenerativeAI(
-            model="gemini-3.6-flash",
-            temperature=0
-        )
+        # Lazy initialize LLM to avoid requiring Google credentials at import
+        self._llm = None
+        self._temperature = 0
+
+    @property
+    def llm(self):
+        if self._llm is None:
+            print("[INFO] Initializing FIRAnswerGenerator LLM lazily")
+            self._llm = ChatGoogleGenerativeAI(model="gemini-3.6-flash", temperature=self._temperature)
+        return self._llm
 
     def generate(
         self,
@@ -65,8 +71,6 @@ Retrieved evidence:
 Provide a concise investigation-oriented answer.
 """
 
-        response = self.llm.invoke(
-            prompt
-        )
+        response = self.llm.invoke(prompt)
 
         return response.content

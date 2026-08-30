@@ -5,12 +5,33 @@ import { api } from "../api/client";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
-  show: { opacity: 1, transition: { staggerChildren: 0.1 } }
+  show: { opacity: 1, transition: { staggerChildren: 0.1 } },
 };
 
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } }
+  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } },
+};
+
+const formatTimestamp = (value: unknown): string => {
+  if (!value) return "N/A";
+  if (typeof value === "string") return value;
+  if (typeof value === "object") {
+    const candidate = value as Record<string, unknown>;
+    const date = candidate["_DateTime__date"] as Record<string, unknown> | undefined;
+    const time = candidate["_DateTime__time"] as Record<string, unknown> | undefined;
+
+    const year = Number(date?.["_Date__year"] ?? 0);
+    const month = Number(date?.["_Date__month"] ?? 1);
+    const day = Number(date?.["_Date__day"] ?? 1);
+    const hour = Number(time?.["_Time__hour"] ?? 0);
+    const minute = Number(time?.["_Time__minute"] ?? 0);
+    const second = Number(time?.["_Time__second"] ?? 0);
+
+    const dt = new Date(year, month - 1, day, hour, minute, second);
+    return Number.isNaN(dt.getTime()) ? "N/A" : dt.toISOString();
+  }
+  return String(value);
 };
 
 export default function Anomalies() {
@@ -21,7 +42,7 @@ export default function Anomalies() {
     api
       .get("/anomalies?limit=200")
       .then((response) => {
-        setAnomalies(response.data.anomalies);
+        setAnomalies(Array.isArray(response.data.anomalies) ? response.data.anomalies : []);
         setLoading(false);
       })
       .catch((err) => {
@@ -49,39 +70,45 @@ export default function Anomalies() {
           No anomalies detected in the current dataset.
         </div>
       ) : (
-        <motion.div 
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="show"
           className="grid gap-4"
         >
-          {anomalies.map((anomaly) => (
-            <motion.div
-              variants={itemVariants}
-              key={anomaly.transaction_id}
-              className="rounded-xl border border-[var(--color-destructive)]/30 bg-[var(--color-card)] p-5 shadow-sm transition-all hover:border-[var(--color-destructive)]/60 hover:shadow-md"
-            >
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <div className="flex items-center gap-4">
-                  <div className="rounded-lg border border-[var(--color-destructive)]/20 bg-[var(--color-destructive)]/10 p-3 text-[var(--color-destructive)]">
-                    <AlertTriangle size={20} />
-                  </div>
-                  <div>
-                    <p className="font-mono text-sm font-semibold text-[var(--color-foreground)]">{anomaly.transaction_id}</p>
-                    <p className="mt-1 text-xs text-[var(--color-muted-foreground)]">{anomaly.timestamp}</p>
-                  </div>
-                </div>
+          {anomalies.map((anomaly) => {
+            const amount = typeof anomaly.amount === "number" ? anomaly.amount : Number(anomaly.amount ?? 0);
+            const score = typeof anomaly.anomaly_score === "number" ? anomaly.anomaly_score : null;
+            const key = anomaly.transaction_id || "UNKNOWN_TRANSACTION";
 
-                <div className="text-left sm:text-right">
-                  <p className="text-xl font-bold tracking-tight text-[var(--color-foreground)]">₹{anomaly.amount}</p>
-                  <div className="mt-1 flex items-center sm:justify-end gap-1.5 text-xs font-medium text-[var(--color-destructive)]">
-                    <Activity size={13} />
-                    Risk Score: {anomaly.anomaly_score?.toFixed(4)}
+            return (
+              <motion.div
+                variants={itemVariants}
+                key={key}
+                className="rounded-xl border border-[var(--color-destructive)]/30 bg-[var(--color-card)] p-5 shadow-sm transition-all hover:border-[var(--color-destructive)]/60 hover:shadow-md"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="flex items-center gap-4">
+                    <div className="rounded-lg border border-[var(--color-destructive)]/20 bg-[var(--color-destructive)]/10 p-3 text-[var(--color-destructive)]">
+                      <AlertTriangle size={20} />
+                    </div>
+                    <div>
+                      <p className="font-mono text-sm font-semibold text-[var(--color-foreground)]">{anomaly.transaction_id || "UNKNOWN_TRANSACTION"}</p>
+                      <p className="mt-1 text-xs text-[var(--color-muted-foreground)]">{formatTimestamp(anomaly.timestamp)}</p>
+                    </div>
+                  </div>
+
+                  <div className="text-left sm:text-right">
+                    <p className="text-xl font-bold tracking-tight text-[var(--color-foreground)]">₹{Number.isFinite(amount) ? amount.toLocaleString() : "0"}</p>
+                    <div className="mt-1 flex items-center sm:justify-end gap-1.5 text-xs font-medium text-[var(--color-destructive)]">
+                      <Activity size={13} />
+                      Risk Score: {score !== null && score !== undefined ? score.toFixed(4) : "—"}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </motion.div>
       )}
     </div>

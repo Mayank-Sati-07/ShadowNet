@@ -146,7 +146,7 @@ class CNASGraphTools:
         LIMIT 10
         """
 
-        return self.neo4j.execute_query(
+        return self.client.execute_query(
             query,
             {
                 "source": source_name,

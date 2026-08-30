@@ -11,15 +11,20 @@ class InvestigationTools:
 
     def __init__(self):
 
-        self.rag = FIRRAGPipeline()
+        # Do not initialize heavy RAG pipeline at construction time.
+        # Instantiate graph services (lightweight) and lazily create RAG when needed.
+        self._rag = None
 
-        self.graph = (
-            GraphInvestigationService()
-        )
+        self.graph = GraphInvestigationService()
 
-        self.graph_intelligence = (
-            GraphIntelligenceService()
-        )
+        self.graph_intelligence = GraphIntelligenceService()
+
+    @property
+    def rag(self):
+        if self._rag is None:
+            print("[INFO] Initializing RAG pipeline lazily (this should run offline if possible)")
+            self._rag = FIRRAGPipeline()
+        return self._rag
 
     # =========================================================
     # RAG

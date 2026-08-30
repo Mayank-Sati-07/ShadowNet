@@ -17,9 +17,8 @@ class CNASInvestigationAgent:
 
     def __init__(self):
 
-        self.llm = ChatGoogleGenerativeAI(
-            model="gemini-3.6-flash"
-        )
+        # Delay heavy LLM initialization until needed
+        self._llm = None
 
         self.graph = CNASGraphTools()
 
@@ -204,3 +203,10 @@ say so explicitly.
         )
 
         return result
+
+    @property
+    def llm(self):
+        if self._llm is None:
+            print("[INFO] Initializing investigation agent LLM lazily")
+            self._llm = ChatGoogleGenerativeAI(model="gemini-3.6-flash")
+        return self._llm

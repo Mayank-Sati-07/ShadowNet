@@ -13,15 +13,22 @@ class FIRExtractor:
 
     def __init__(self):
 
-        self.llm = ChatGoogleGenerativeAI(
-            model="gemini-3.6-flash"
-        )
+        # Lazy-init heavy LLM clients to avoid requiring credentials at import
+        self._llm = None
+        self._structured_llm = None
 
-        self.structured_llm = (
-            self.llm.with_structured_output(
-                FIRExtraction
-            )
-        )
+    @property
+    def llm(self):
+        if self._llm is None:
+            print("[INFO] Initializing FIRExtractor LLM lazily")
+            self._llm = ChatGoogleGenerativeAI(model="gemini-3.6-flash")
+        return self._llm
+
+    @property
+    def structured_llm(self):
+        if self._structured_llm is None:
+            self._structured_llm = self.llm.with_structured_output(FIRExtraction)
+        return self._structured_llm
 
     def extract(self, text: str) -> FIRExtraction:
 
@@ -173,9 +180,7 @@ FIR DOCUMENT
 
         print("\n[LLM] Sending extraction request...")
 
-        result = self.structured_llm.invoke(
-            prompt
-        )
+        result = self.structured_llm.invoke(prompt)
 
         if result is None:
             raise RuntimeError(

@@ -7,9 +7,14 @@ class EntityExtractor:
 
     def __init__(self):
 
-        self.llm = ChatGoogleGenerativeAI(
-            model="gemini-3.6-flash"
-        )
+        # Lazy initialize LLM to avoid external calls at import time
+        self._llm = None
+
+    @property
+    def llm(self):
+        if self._llm is None:
+            self._llm = ChatGoogleGenerativeAI(model="gemini-3.6-flash")
+        return self._llm
 
     def extract_people(self, question: str):
 

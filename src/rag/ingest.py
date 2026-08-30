@@ -2,13 +2,23 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from src.rag.document_loader import FIRDocumentLoader
 from src.rag.vector_store import CNASPineconeStore
+from src.rag import registry
+import os
+import json
+import logging
+
+
+# ensure registry exists
+registry.init_db()
 
 
 class FIRIngestor:
 
     def __init__(self):
 
-        self.store = CNASPineconeStore()
+        # Do not connect to Pinecone / load embeddings at object construction.
+        # The store will be created in ingest() with mode='ingest'.
+        self.store = None
 
         self.text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=500,
@@ -26,105 +36,136 @@ class FIRIngestor:
         self,
         path: str,
         fir_id: str
+        , dry_run: bool = False
     ):
 
-        print("=" * 70)
-        print("CNAS FIR PINECONE INGESTION")
-        print("=" * 70)
+        logger = logging.getLogger("cnas.ingest")
+        logger.info("%s", "=" * 70)
+        logger.info("CNAS FIR PINECONE INGESTION")
+        logger.info("%s", "=" * 70)
 
         # =====================================================
         # 1. LOAD FIR
         # =====================================================
 
-        print("\n[1] Loading FIR...")
+        logger.info("[1] Loading FIR...")
 
-        document = FIRDocumentLoader.load(
-            path,
-            fir_id
-        )
+        document = FIRDocumentLoader.load(path, fir_id)
 
-        print(
-            f"✓ FIR loaded: {fir_id}"
-        )
+        # Ensure the document has a metadata attribute for the text splitter
+        if not hasattr(document, "metadata"):
+            document.metadata = {}
 
-        print(
-            f"✓ Characters: "
-            f"{len(document.page_content):,}"
-        )
+        # compute deterministic document id and content hash
+        document_id = fir_id
+        content_bytes = document.page_content.encode("utf-8")
+        content_hash = registry.compute_hash(content_bytes)
+
+        existing = registry.get_document(document_id)
+
+        if existing and existing.get("content_hash") == content_hash:
+            logger.info("SKIPPED: Document %s unchanged (content hash matched)", document_id)
+            # Attempt to return cached vectors if available
+            cache_dir = os.path.join("data", "processed", "vectors")
+            cache_path = os.path.join(cache_dir, f"{document_id}.json")
+            try:
+                if os.path.exists(cache_path):
+                    with open(cache_path, "r", encoding="utf-8") as fh:
+                        return json.load(fh)
+            except Exception:
+                logger.exception("Failed to read cache %s", cache_path)
+
+            return registry.list_chunks(document_id)
+
+        if existing:
+            logger.info("RE-EMBEDDED: Document %s changed — reprocessing", document_id)
+
+
+        logger.info("✓ FIR loaded: %s", fir_id)
+        logger.info("✓ Characters: %s", f"{len(document.page_content):,}")
 
         # =====================================================
         # 2. CHUNK DOCUMENT
         # =====================================================
 
-        print("\n[2] Creating chunks...")
+        logger.info("[2] Creating chunks...")
 
-        chunks = self.text_splitter.split_documents(
-            [document]
-        )
+        chunks = self.text_splitter.split_documents([document])
 
-        print(
-            f"✓ Chunks created: {len(chunks)}"
-        )
+        logger.info("✓ Chunks created: %s", len(chunks))
 
         # =====================================================
         # 3. CREATE EMBEDDINGS
         # =====================================================
 
-        print("\n[3] Creating embeddings...")
+        logger.info("[3] Creating embeddings...")
 
         vectors = []
 
+        # Initialize store in ingest mode (loads embeddings)
+        # If dry_run is True we still load the embeddings model but avoid
+        # performing any network calls to Pinecone or writing to the registry.
+        self.store = CNASPineconeStore(mode="ingest")
+
         for i, chunk in enumerate(chunks):
-
             text = chunk.page_content
-
-            vector = self.store.embeddings.embed_query(
-                text
-            )
-
+            vector = self.store.embeddings.embed_query(text)
+            vector_id = f"{fir_id}_chunk_{i}"
             vectors.append({
-                "id": f"{fir_id}_chunk_{i}",
-
+                "id": vector_id,
                 "values": vector,
-
                 "metadata": {
                     "fir_id": fir_id,
                     "chunk_id": i,
                     "text": text,
                     "source": path,
-                    "document_type": "FIR"
-                }
+                    "document_type": "FIR",
+                },
             })
+            # record chunk metadata to registry
+            chunk_hash = registry.compute_hash(text.encode("utf-8"))
+            if not dry_run:
+                registry.upsert_chunk(document_id, str(i), vector_id, chunk_hash)
 
-        print(
-            f"✓ Embeddings created: {len(vectors)}"
-        )
+        logger.info("✓ Embeddings created: %s", len(vectors))
 
         if vectors:
-
-            print(
-                f"✓ Vector dimension: "
-                f"{len(vectors[0]['values'])}"
-            )
+            logger.info("✓ Vector dimension: %s", len(vectors[0]["values"]))
 
         # =====================================================
         # 4. UPLOAD TO PINECONE
         # =====================================================
 
-        print("\n[4] Uploading to Pinecone...")
+        logger.info("[4] Uploading to Pinecone...")
 
-        self.store.upsert(
-            vectors
-        )
+        if dry_run:
+            logger.info("DRY RUN: skipping Pinecone upsert and registry writes")
+        else:
+            self.store.upsert(vectors)
 
-        print(
-            f"✓ Uploaded {len(vectors)} vectors"
-        )
+            # record document metadata as processed
+            registry.upsert_document(document_id, content_hash, path, status="processed")
+
+        # cache vectors locally for idempotent reads
+        cache_dir = os.path.join("data", "processed", "vectors")
+        os.makedirs(cache_dir, exist_ok=True)
+        cache_path = os.path.join(cache_dir, f"{document_id}.json")
+        try:
+            with open(cache_path, "w", encoding="utf-8") as fh:
+                json.dump(vectors, fh)
+        except Exception:
+            logger.exception("Failed to cache vectors to %s", cache_path)
+
+        if dry_run:
+            logger.info("DRY RUN: Document %s processed locally (%s vectors)", document_id, len(vectors))
+        else:
+            logger.info("PROCESSED: Document %s ingested and indexed (%s vectors)", document_id, len(vectors))
+            logger.info("✓ Uploaded %s vectors", len(vectors))
 
         # =====================================================
         # 5. RESULT
         # =====================================================
 
-        print("\n✓ INGESTION COMPLETED")
+        logger.info("\n✓ INGESTION COMPLETED")
 
         return vectors
