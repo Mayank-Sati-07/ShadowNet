@@ -1,4 +1,4 @@
-#ShadowNet
+# ShadowNet
 
 > **An evidence-grounded criminal intelligence and network analysis platform combining Knowledge Graphs, Graph Analytics, Machine Learning, NLP, RAG, and AI-assisted investigation.**
 
