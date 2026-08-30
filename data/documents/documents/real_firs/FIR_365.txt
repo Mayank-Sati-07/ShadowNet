@@ -1,0 +1,19 @@
+FIR No: FIR_365
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 365
+Police Station: Eco Park
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0083
+
+Crime records:
+- CRIME_365
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 420
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8361
+Low confidence flag: True

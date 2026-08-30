@@ -1,0 +1,20 @@
+FIR No: FIR_381
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 381
+Police Station: Eco Park
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0439
+
+Crime records:
+- CRIME_381
+
+Statutes / sections:
+- The Wblr Act. 1955 — Section 4C
+- Wblr Act — Section 4D
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8462
+Low confidence flag: False

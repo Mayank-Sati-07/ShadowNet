@@ -1,0 +1,20 @@
+FIR No: FIR_177
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 177
+Police Station: Baguiati
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0347
+
+Crime records:
+- CRIME_177
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 279
+- Indian Penal Code (IPC) — Section 304A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9306
+Low confidence flag: False

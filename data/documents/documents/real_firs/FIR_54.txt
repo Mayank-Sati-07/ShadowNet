@@ -1,0 +1,20 @@
+FIR No: FIR_54
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 54
+Police Station: Airport
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0227
+
+Crime records:
+- CRIME_54
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 420
+
+Record completeness: 100.0%
+Average extraction confidence: 0.7014
+Low confidence flag: True

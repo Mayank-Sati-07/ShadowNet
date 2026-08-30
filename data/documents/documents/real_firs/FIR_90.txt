@@ -1,0 +1,22 @@
+FIR No: FIR_90
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 90
+Police Station: Airport
+Year: 2018
+
+Crime records:
+- CRIME_90
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 307
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 328
+- Indian Penal Code (IPC) — Section 379
+- Indian Penal Code (IPC) — Section 384
+- Indian Penal Code (IPC) — Section 497
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8442
+Low confidence flag: False

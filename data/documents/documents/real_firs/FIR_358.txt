@@ -1,0 +1,21 @@
+FIR No: FIR_358
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 358
+Police Station: Unknown police station
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0398
+
+Crime records:
+- CRIME_358
+
+Statutes / sections:
+- Ipc Rw Section 3/4 Pdpp Act — Section 143
+- Ipc Rw Section 3/4 Pdpp Act — Section 145
+- Ipc Rw Section 3/4 Pdpp Act — Section 427
+
+Record completeness: 50.0%
+Average extraction confidence: 0.8242
+Low confidence flag: False

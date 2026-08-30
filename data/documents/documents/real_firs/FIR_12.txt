@@ -1,0 +1,21 @@
+FIR No: FIR_12
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 12
+Police Station: Airport
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0387
+
+Crime records:
+- CRIME_12
+
+Statutes / sections:
+- (I)A/27 Arms Act — Section 25
+- Indian Penal Code (IPC) — Section 399
+- (I)A/27 Arms Act — Section 402
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8304
+Low confidence flag: False

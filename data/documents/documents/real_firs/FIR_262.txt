@@ -1,0 +1,22 @@
+FIR No: FIR_262
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 262
+Police Station: Bidhannagar North
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0404
+
+Crime records:
+- CRIME_262
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 24
+- Maintenance And Welfare Of Parents And Senior Citizen Act — Section 323
+- Indian Penal Code (IPC) — Section 325
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8697
+Low confidence flag: False

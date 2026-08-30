@@ -1,0 +1,19 @@
+FIR No: FIR_293
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 293
+Police Station: Bidhannagar South
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0024
+
+Crime records:
+- CRIME_293
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 379
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8644
+Low confidence flag: False

@@ -1,0 +1,23 @@
+FIR No: FIR_558
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 558
+Police Station: Women
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0118
+
+Crime records:
+- CRIME_558
+
+Statutes / sections:
+- (Ii)/509/34 Ipc — Section 323
+- (Ii)/509/34 Ipc — Section 341
+- (Ii)/509/34 Ipc — Section 379
+- (Ii)/509/34 Ipc — Section 506
+- (Ii)/509/34 Ipc — Section 354A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8543
+Low confidence flag: False

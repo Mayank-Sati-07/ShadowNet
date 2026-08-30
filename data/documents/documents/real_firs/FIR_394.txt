@@ -1,0 +1,20 @@
+FIR No: FIR_394
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 394
+Police Station: Eco Park
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0373
+
+Crime records:
+- CRIME_394
+
+Statutes / sections:
+- Unspecified — Section 399
+- Unspecified — Section 402
+
+Record completeness: 100.0%
+Average extraction confidence: 0.788
+Low confidence flag: False

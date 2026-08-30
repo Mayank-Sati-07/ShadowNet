@@ -1,0 +1,25 @@
+FIR No: FIR_566
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 566
+Police Station: Women
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0111
+
+Crime records:
+- CRIME_566
+
+Statutes / sections:
+- Dp Act — Section 3
+- Indian Penal Code (IPC) — Section 4
+- Dp Act — Section 34
+- Dp Act — Section 313
+- Dp Act — Section 325
+- Dp Act — Section 406
+- Dp Act — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8141
+Low confidence flag: False

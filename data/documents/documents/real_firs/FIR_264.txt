@@ -1,0 +1,20 @@
+FIR No: FIR_264
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 264
+Police Station: Bidhannagar North
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0307
+
+Crime records:
+- CRIME_264
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9268
+Low confidence flag: False

@@ -1,0 +1,24 @@
+FIR No: FIR_31
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 31
+Police Station: Airport
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0043
+
+Crime records:
+- CRIME_31
+
+Statutes / sections:
+- 43 Ipc — Section 147
+- 43 Ipc — Section 148
+- 43 Ipc — Section 323
+- 43 Ipc — Section 354
+- 43 Ipc — Section 379
+- 43 Ipc — Section 506
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9276
+Low confidence flag: False

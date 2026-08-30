@@ -1,0 +1,21 @@
+FIR No: FIR_436
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 436
+Police Station: Electronics Complex
+Year: 2022
+
+Persons / linked FIR subjects:
+- FIR_P_0141
+
+Crime records:
+- CRIME_436
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 279
+- Indian Penal Code (IPC) — Section 427
+- Indian Penal Code (IPC) — Section 304A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9028
+Low confidence flag: False

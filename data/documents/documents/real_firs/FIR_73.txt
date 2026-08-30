@@ -1,0 +1,23 @@
+FIR No: FIR_73
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 73
+Police Station: Airport
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0226
+
+Crime records:
+- CRIME_73
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 325
+- Indian Penal Code (IPC) — Section 341
+- Indian Penal Code (IPC) — Section 427
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8634
+Low confidence flag: False

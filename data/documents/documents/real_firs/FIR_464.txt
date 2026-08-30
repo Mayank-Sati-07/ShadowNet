@@ -1,0 +1,19 @@
+FIR No: FIR_464
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 464
+Police Station: Lake Town
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0331
+
+Crime records:
+- CRIME_464
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 381
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9738
+Low confidence flag: False

@@ -1,0 +1,20 @@
+FIR No: FIR_332
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 332
+Police Station: Cyber-Crime
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0478
+
+Crime records:
+- CRIME_332
+
+Statutes / sections:
+- Unspecified — Section 469
+- Unspecified — Section 500
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8761
+Low confidence flag: False

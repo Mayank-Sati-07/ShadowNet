@@ -1,0 +1,16 @@
+FIR No: FIR_217
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 217
+Police Station: Baguiati
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0191
+
+Crime records:
+- CRIME_217
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9121
+Low confidence flag: False

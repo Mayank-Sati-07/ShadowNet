@@ -1,0 +1,21 @@
+FIR No: FIR_118
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 118
+Police Station: Baguiati
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0068
+
+Crime records:
+- CRIME_118
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 313
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9616
+Low confidence flag: False

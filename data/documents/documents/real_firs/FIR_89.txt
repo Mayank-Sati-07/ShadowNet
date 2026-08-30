@@ -1,0 +1,24 @@
+FIR No: FIR_89
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 89
+Police Station: Airport
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0466
+
+Crime records:
+- CRIME_89
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 341
+- Indian Penal Code (IPC) — Section 353
+- Indian Penal Code (IPC) — Section 448
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8618
+Low confidence flag: False

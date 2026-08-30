@@ -1,0 +1,16 @@
+FIR No: FIR_443
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 443
+Police Station: Unknown police station
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0449
+
+Crime records:
+- CRIME_443
+
+Record completeness: 50.0%
+Average extraction confidence: 0.8582
+Low confidence flag: False

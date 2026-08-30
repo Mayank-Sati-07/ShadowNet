@@ -1,0 +1,29 @@
+FIR No: FIR_77
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 77
+Police Station: Airport
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0428
+
+Crime records:
+- CRIME_77
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 114
+- Unspecified — Section 116
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 341
+- Indian Penal Code (IPC) — Section 352
+- Indian Penal Code (IPC) — Section 379
+- Indian Penal Code (IPC) — Section 386
+- Indian Penal Code (IPC) — Section 427
+- Indian Penal Code (IPC) — Section 448
+- Indian Penal Code (IPC) — Section 506
+- Indian Penal Code (IPC) — Section 120B
+
+Record completeness: 100.0%
+Average extraction confidence: 0.7953
+Low confidence flag: True

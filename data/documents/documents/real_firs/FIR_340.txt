@@ -1,0 +1,21 @@
+FIR No: FIR_340
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 340
+Police Station: Cyber-Crime
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0358
+
+Crime records:
+- CRIME_340
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 419
+- Indian Penal Code (IPC) — Section 420
+- Indian Penal Code (IPC) — Section 120B
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9104
+Low confidence flag: False

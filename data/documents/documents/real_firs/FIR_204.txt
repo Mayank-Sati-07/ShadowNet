@@ -1,0 +1,25 @@
+FIR No: FIR_204
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 204
+Police Station: Baguiati
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0385
+
+Crime records:
+- CRIME_204
+
+Statutes / sections:
+- Disaster Management Act — Section 34
+- Indian Penal Code (IPC) — Section 51
+- Disaster Management Act — Section 188
+- Disaster Management Act — Section 269
+- Disaster Management Act — Section 270
+- Disaster Management Act — Section 271
+- Disaster Management Act — Section 290
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9038
+Low confidence flag: False

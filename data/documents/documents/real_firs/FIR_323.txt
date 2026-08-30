@@ -1,0 +1,23 @@
+FIR No: FIR_323
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 323
+Police Station: Bidhannagar South
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0459
+
+Crime records:
+- CRIME_323
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 186
+- Indian Penal Code (IPC) — Section 325
+- Indian Penal Code (IPC) — Section 353
+- Indian Penal Code (IPC) — Section 365
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 100.0%
+Average extraction confidence: 0.851
+Low confidence flag: True

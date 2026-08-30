@@ -1,0 +1,19 @@
+FIR No: FIR_416
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 416
+Police Station: Unknown police station
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0383
+
+Crime records:
+- CRIME_416
+
+Statutes / sections:
+- (I)(A)/27 Arms Act — Section 25
+
+Record completeness: 75.0%
+Average extraction confidence: 0.5476
+Low confidence flag: True

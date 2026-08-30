@@ -1,0 +1,21 @@
+FIR No: FIR_537
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 537
+Police Station: Women
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0178
+
+Crime records:
+- CRIME_537
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 494
+- Indian Penal Code (IPC) — Section 495
+- Indian Penal Code (IPC) — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8757
+Low confidence flag: False

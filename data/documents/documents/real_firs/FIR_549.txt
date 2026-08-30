@@ -1,0 +1,20 @@
+FIR No: FIR_549
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 549
+Police Station: Nscbi Airport
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0030
+
+Crime records:
+- CRIME_549
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 279
+- Indian Penal Code (IPC) — Section 427
+
+Record completeness: 100.0%
+Average extraction confidence: 0.898
+Low confidence flag: False

@@ -1,0 +1,19 @@
+FIR No: FIR_143
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 143
+Police Station: Baguiati
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0352
+
+Crime records:
+- CRIME_143
+
+Statutes / sections:
+- (I)(A) Of Electricity Act, 2003 — Section 135
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8565
+Low confidence flag: True

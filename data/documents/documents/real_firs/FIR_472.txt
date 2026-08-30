@@ -1,0 +1,20 @@
+FIR No: FIR_472
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 472
+Police Station: Lake Town
+Year: 2021
+
+Crime records:
+- CRIME_472
+
+Statutes / sections:
+- Dp Act — Section 3
+- Indian Penal Code (IPC) — Section 4
+- Dp Act — Section 34
+- Dp Act — Section 406
+- Dp Act — Section 498A
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8703
+Low confidence flag: False

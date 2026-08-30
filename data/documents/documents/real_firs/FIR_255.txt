@@ -1,0 +1,20 @@
+FIR No: FIR_255
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 255
+Police Station: Bidhannagar North
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0026
+
+Crime records:
+- CRIME_255
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 279
+- Indian Penal Code (IPC) — Section 304
+
+Record completeness: 100.0%
+Average extraction confidence: 0.919
+Low confidence flag: False

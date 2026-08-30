@@ -1,0 +1,16 @@
+FIR No: FIR_61
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 61
+Police Station: Airport
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0051
+
+Crime records:
+- CRIME_61
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8235
+Low confidence flag: True

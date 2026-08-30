@@ -1,0 +1,23 @@
+FIR No: FIR_441
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 441
+Police Station: Electronics Complex
+Year: 2022
+
+Persons / linked FIR subjects:
+- FIR_P_0049
+
+Crime records:
+- CRIME_441
+
+Statutes / sections:
+- Disaster Management Act-2005 — Section 51
+- Indian Penal Code (IPC) — Section 188
+- Disaster Management Act-2005 — Section 269
+- Disaster Management Act-2005 — Section 270
+- Disaster Management Act-2005 — Section 271
+
+Record completeness: 100.0%
+Average extraction confidence: 0.935
+Low confidence flag: False

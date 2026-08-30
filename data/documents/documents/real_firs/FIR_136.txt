@@ -1,0 +1,24 @@
+FIR No: FIR_136
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 136
+Police Station: Baguiati
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0234
+
+Crime records:
+- CRIME_136
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 420
+- Indian Penal Code (IPC) — Section 467
+- Indian Penal Code (IPC) — Section 468
+- Indian Penal Code (IPC) — Section 471
+- Indian Penal Code (IPC) — Section 120B
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9437
+Low confidence flag: False

@@ -1,0 +1,24 @@
+FIR No: FIR_475
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 475
+Police Station: Lake Town
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0316
+
+Crime records:
+- CRIME_475
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 342
+- Indian Penal Code (IPC) — Section 379
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9544
+Low confidence flag: False

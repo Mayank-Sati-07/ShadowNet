@@ -1,0 +1,21 @@
+FIR No: FIR_113
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 113
+Police Station: Baguiati
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0183
+
+Crime records:
+- CRIME_113
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 420
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9251
+Low confidence flag: False

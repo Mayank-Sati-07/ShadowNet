@@ -1,0 +1,16 @@
+FIR No: FIR_439
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 439
+Police Station: Electronics Complex
+Year: 2022
+
+Persons / linked FIR subjects:
+- FIR_P_0049
+
+Crime records:
+- CRIME_439
+
+Record completeness: 75.0%
+Average extraction confidence: 0.7331
+Low confidence flag: False

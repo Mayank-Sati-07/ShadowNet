@@ -1,0 +1,21 @@
+FIR No: FIR_446
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 446
+Police Station: Rajarhat
+Year: 2022
+
+Persons / linked FIR subjects:
+- FIR_P_0015
+
+Crime records:
+- CRIME_446
+
+Statutes / sections:
+- Ipc &Amp; Section 51 Disaster Management Act — Section 188
+- Ipc &Amp; Section 51 Disaster Management Act — Section 269
+- Ipc &Amp; Section 51 Disaster Management Act — Section 270
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8493
+Low confidence flag: False

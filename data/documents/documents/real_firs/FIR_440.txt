@@ -1,0 +1,17 @@
+FIR No: FIR_440
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 440
+Police Station: Electronics Complex
+Year: 2021
+
+Crime records:
+- CRIME_440
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 379
+- Indian Penal Code (IPC) — Section 413
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9054
+Low confidence flag: False

@@ -1,0 +1,22 @@
+FIR No: FIR_249
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 249
+Police Station: Bidhannagar North
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0382
+
+Crime records:
+- CRIME_249
+
+Statutes / sections:
+- Fire Service Act — Section 188
+- Indian Penal Code (IPC) — Section 285
+- Fire Service Act — Section 286
+- Fire Service Act — Section 24Wb
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9
+Low confidence flag: False

@@ -1,0 +1,23 @@
+FIR No: FIR_546
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 546
+Police Station: Unknown police station
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0253
+
+Crime records:
+- CRIME_546
+
+Statutes / sections:
+- (Ii)/307 Ipc — Section 323
+- (Ii)/307 Ipc — Section 325
+- (Ii)/307 Ipc — Section 341
+- (Ii)/307 Ipc — Section 506
+- (Ii)/307 Ipc — Section 498A
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9426
+Low confidence flag: False

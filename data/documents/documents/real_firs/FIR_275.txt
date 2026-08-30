@@ -1,0 +1,20 @@
+FIR No: FIR_275
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 275
+Police Station: Bidhannagar North
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0162
+
+Crime records:
+- CRIME_275
+
+Statutes / sections:
+- (2)(3)/506 (Ii)/509 Ipc — Section 504
+- (2)(3)/506 (Ii)/509 Ipc — Section 505
+
+Record completeness: 100.0%
+Average extraction confidence: 0.7393
+Low confidence flag: True

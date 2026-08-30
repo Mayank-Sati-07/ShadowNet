@@ -1,0 +1,19 @@
+FIR No: FIR_477
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 477
+Police Station: Lake Town
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0416
+
+Crime records:
+- CRIME_477
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 379
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8497
+Low confidence flag: False

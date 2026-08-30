@@ -1,0 +1,22 @@
+FIR No: FIR_270
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 270
+Police Station: Bidhannagar North
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0173
+
+Crime records:
+- CRIME_270
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 166
+- Indian Penal Code (IPC) — Section 325
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 100.0%
+Average extraction confidence: 0.954
+Low confidence flag: False

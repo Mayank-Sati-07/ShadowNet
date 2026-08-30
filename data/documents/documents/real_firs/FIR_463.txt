@@ -1,0 +1,19 @@
+FIR No: FIR_463
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 463
+Police Station: Unknown police station
+Year: 2019
+
+Persons / linked FIR subjects:
+- FIR_P_0130
+
+Crime records:
+- CRIME_463
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 379
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9251
+Low confidence flag: False

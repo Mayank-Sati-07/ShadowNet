@@ -1,0 +1,22 @@
+FIR No: FIR_433
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 433
+Police Station: Electronics Complex
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0128
+
+Crime records:
+- CRIME_433
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 419
+- Indian Penal Code (IPC) — Section 420
+- Indian Penal Code (IPC) — Section 120B
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9388
+Low confidence flag: False

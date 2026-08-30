@@ -1,0 +1,21 @@
+FIR No: FIR_0
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 0
+Police Station: Unknown police station
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0387
+
+Crime records:
+- CRIME_0
+
+Statutes / sections:
+- (I)(A)/27 Arms Act — Section 25
+- Indian Penal Code (IPC) — Section 399
+- (I)(A)/27 Arms Act — Section 402
+
+Record completeness: 50.0%
+Average extraction confidence: 0.7792
+Low confidence flag: False

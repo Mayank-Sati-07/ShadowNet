@@ -1,0 +1,20 @@
+FIR No: FIR_71
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 71
+Police Station: Airport
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0324
+
+Crime records:
+- CRIME_71
+
+Statutes / sections:
+- Unspecified — Section 279
+- Unspecified — Section 338
+
+Record completeness: 75.0%
+Average extraction confidence: 0.7831
+Low confidence flag: False

@@ -1,0 +1,26 @@
+FIR No: FIR_385
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 385
+Police Station: Eco Park
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0192
+
+Crime records:
+- CRIME_385
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 325
+- Indian Penal Code (IPC) — Section 341
+- Indian Penal Code (IPC) — Section 379
+- Indian Penal Code (IPC) — Section 384
+- Indian Penal Code (IPC) — Section 386
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9288
+Low confidence flag: False

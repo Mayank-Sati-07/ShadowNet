@@ -1,0 +1,23 @@
+FIR No: FIR_144
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 144
+Police Station: Baguiati
+Year: 2019
+
+Persons / linked FIR subjects:
+- FIR_P_0377
+
+Crime records:
+- CRIME_144
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 186
+- Indian Penal Code (IPC) — Section 188
+- Indian Penal Code (IPC) — Section 341
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8524
+Low confidence flag: False

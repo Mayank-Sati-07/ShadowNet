@@ -1,0 +1,21 @@
+FIR No: FIR_412
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 412
+Police Station: Eco Park
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0330
+
+Crime records:
+- CRIME_412
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 342
+- Indian Penal Code (IPC) — Section 354
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9077
+Low confidence flag: False

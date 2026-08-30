@@ -1,0 +1,23 @@
+FIR No: FIR_263
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 263
+Police Station: Bidhannagar North
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0067
+
+Crime records:
+- CRIME_263
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 114
+- Indian Penal Code (IPC) — Section 279
+- Indian Penal Code (IPC) — Section 333
+- Indian Penal Code (IPC) — Section 353
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8822
+Low confidence flag: False

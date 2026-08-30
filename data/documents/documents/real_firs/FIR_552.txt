@@ -1,0 +1,23 @@
+FIR No: FIR_552
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 552
+Police Station: Women
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0354
+
+Crime records:
+- CRIME_552
+
+Statutes / sections:
+- D.P. Act — Section 3
+- Indian Penal Code (IPC) — Section 4
+- D.P. Act — Section 34
+- D.P. Act — Section 406
+- D.P. Act — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.7889
+Low confidence flag: False

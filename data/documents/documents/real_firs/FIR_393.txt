@@ -1,0 +1,19 @@
+FIR No: FIR_393
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 393
+Police Station: Eco Park
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0071
+
+Crime records:
+- CRIME_393
+
+Statutes / sections:
+- (F)(I) Ipc Rw Section 06 Of Pocso Act — Section 376
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9646
+Low confidence flag: False

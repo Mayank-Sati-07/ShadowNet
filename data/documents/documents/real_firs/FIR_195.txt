@@ -1,0 +1,16 @@
+FIR No: FIR_195
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 195
+Police Station: Baguiati
+Year: 2018
+
+Crime records:
+- CRIME_195
+
+Statutes / sections:
+- A/406/34 Ipc — Section 498
+
+Record completeness: 75.0%
+Average extraction confidence: 0.881
+Low confidence flag: False

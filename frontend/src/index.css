@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Fira+Code:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #11051F;
+  --color-foreground: #E8DEFA;
+  
+  --color-card: #19092C;
+  --color-card-foreground: #E8DEFA;
+  
+  --color-popover: #19092C;
+  --color-popover-foreground: #E8DEFA;
+  
+  --color-primary: #00E5FF;
+  --color-primary-foreground: #000000;
+  
+  --color-secondary: #FF007F;
+  --color-secondary-foreground: #FFFFFF;
+  
+  --color-muted: #24113B;
+  --color-muted-foreground: #8F7CA8;
+  
+  --color-accent: #00FF9D;
+  --color-accent-foreground: #000000;
+  
+  --color-destructive: #FF3366;
+  --color-destructive-foreground: #FFFFFF;
+  
+  --color-border: #32194D;
+  --color-input: #32194D;
+  --color-ring: #00E5FF;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  :root {
+    --background: #11051F;
+    --foreground: #E8DEFA;
+    --card: #19092C;
+    --card-foreground: #E8DEFA;
+    --popover: #19092C;
+    --popover-foreground: #E8DEFA;
+    --primary: #00E5FF;
+    --primary-foreground: #000000;
+    --secondary: #FF007F;
+    --secondary-foreground: #FFFFFF;
+    --muted: #24113B;
+    --muted-foreground: #8F7CA8;
+    --accent: #00FF9D;
+    --accent-foreground: #000000;
+    --destructive: #FF3366;
+    --destructive-foreground: #FFFFFF;
+    --border: #32194D;
+    --input: #32194D;
+    --ring: #00E5FF;
+    --radius: 0.5rem; /* Rounded corners match the image */
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    background-image: 
+      radial-gradient(ellipse at top left, #1E0B36 0%, transparent 70%),
+      radial-gradient(ellipse at bottom right, #160424 0%, transparent 70%);
+    background-attachment: fixed;
+    transition: background-color 0.5s ease;
+  }
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Utilities for data and numbers */
+.font-mono {
+  font-family: 'Fira Code', monospace;
+}

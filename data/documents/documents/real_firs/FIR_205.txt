@@ -1,0 +1,16 @@
+FIR No: FIR_205
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 205
+Police Station: Baguiati
+Year: 2018
+
+Crime records:
+- CRIME_205
+
+Statutes / sections:
+- (I)(E) Electricity Act 2003 — Section 135
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8948
+Low confidence flag: False

@@ -1,0 +1,16 @@
+FIR No: FIR_483
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 483
+Police Station: Lake Town
+Year: Unknown
+
+Crime records:
+- CRIME_483
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 363
+
+Record completeness: 50.0%
+Average extraction confidence: 0.7308
+Low confidence flag: True

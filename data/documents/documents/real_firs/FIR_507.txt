@@ -1,0 +1,13 @@
+FIR No: FIR_507
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 507
+Police Station: Nscbi Airport
+Year: Unknown
+
+Crime records:
+- CRIME_507
+
+Record completeness: 25.0%
+Average extraction confidence: 0.5563
+Low confidence flag: True

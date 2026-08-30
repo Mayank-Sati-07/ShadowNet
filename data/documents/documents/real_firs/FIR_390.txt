@@ -1,0 +1,21 @@
+FIR No: FIR_390
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 390
+Police Station: Eco Park
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0452
+
+Crime records:
+- CRIME_390
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 279
+- Indian Penal Code (IPC) — Section 338
+- Indian Penal Code (IPC) — Section 427
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9238
+Low confidence flag: False

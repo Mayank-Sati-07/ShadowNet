@@ -1,0 +1,20 @@
+FIR No: FIR_47
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 47
+Police Station: Airport
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0473
+
+Crime records:
+- CRIME_47
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 279
+- Indian Penal Code (IPC) — Section 338
+
+Record completeness: 100.0%
+Average extraction confidence: 0.911
+Low confidence flag: False

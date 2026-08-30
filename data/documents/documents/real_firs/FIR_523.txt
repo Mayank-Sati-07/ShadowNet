@@ -1,0 +1,24 @@
+FIR No: FIR_523
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 523
+Police Station: Women
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0137
+
+Crime records:
+- CRIME_523
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 307
+- Indian Penal Code (IPC) — Section 325
+- Indian Penal Code (IPC) — Section 354
+- Indian Penal Code (IPC) — Section 506
+- Indian Penal Code (IPC) — Section 120B
+- Indian Penal Code (IPC) — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8931
+Low confidence flag: False

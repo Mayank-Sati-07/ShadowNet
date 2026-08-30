@@ -1,0 +1,20 @@
+FIR No: FIR_445
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 445
+Police Station: Electronics Complex
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0078
+
+Crime records:
+- CRIME_445
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 420
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8958
+Low confidence flag: False

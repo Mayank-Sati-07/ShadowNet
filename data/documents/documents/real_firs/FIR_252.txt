@@ -1,0 +1,21 @@
+FIR No: FIR_252
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 252
+Police Station: Unknown police station
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0305
+
+Crime records:
+- CRIME_252
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 279
+- Indian Penal Code (IPC) — Section 337
+- Indian Penal Code (IPC) — Section 338
+
+Record completeness: 50.0%
+Average extraction confidence: 0.9046
+Low confidence flag: False

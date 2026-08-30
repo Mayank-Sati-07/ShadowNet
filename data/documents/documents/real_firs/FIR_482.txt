@@ -1,0 +1,16 @@
+FIR No: FIR_482
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 482
+Police Station: Lake Town
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0155
+
+Crime records:
+- CRIME_482
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9643
+Low confidence flag: False

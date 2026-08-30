@@ -1,0 +1,23 @@
+FIR No: FIR_183
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 183
+Police Station: Unknown police station
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0289
+
+Crime records:
+- CRIME_183
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 427
+- Indian Penal Code (IPC) — Section 448
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 50.0%
+Average extraction confidence: 0.8729
+Low confidence flag: False

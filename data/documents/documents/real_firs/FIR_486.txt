@@ -1,0 +1,23 @@
+FIR No: FIR_486
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 486
+Police Station: Unknown police station
+Year: 2022
+
+Persons / linked FIR subjects:
+- FIR_P_0370
+
+Crime records:
+- CRIME_486
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 186
+- Indian Penal Code (IPC) — Section 188
+- Indian Penal Code (IPC) — Section 332
+- Indian Penal Code (IPC) — Section 353
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 75.0%
+Average extraction confidence: 0.6903
+Low confidence flag: True

@@ -1,0 +1,13 @@
+FIR No: FIR_553
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 553
+Police Station: Unknown police station
+Year: 2017
+
+Crime records:
+- CRIME_553
+
+Record completeness: 25.0%
+Average extraction confidence: 0.9234
+Low confidence flag: False

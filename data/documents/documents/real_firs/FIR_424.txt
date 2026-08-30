@@ -1,0 +1,22 @@
+FIR No: FIR_424
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 424
+Police Station: Eco Park
+Year: 2022
+
+Persons / linked FIR subjects:
+- FIR_P_0278
+
+Crime records:
+- CRIME_424
+
+Statutes / sections:
+- Ed Act — Section 02
+- R/W 51(I)(B) Dm Act — Section 188
+- Ed Act — Section 269
+- Ed Act — Section 270Ipc
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9566
+Low confidence flag: False

@@ -1,0 +1,22 @@
+FIR No: FIR_153
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 153
+Police Station: Baguiati
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0265
+
+Crime records:
+- CRIME_153
+
+Statutes / sections:
+- D.P. Act — Section 3
+- Indian Penal Code (IPC) — Section 4
+- D.P. Act — Section 406
+- D.P. Act — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8584
+Low confidence flag: False

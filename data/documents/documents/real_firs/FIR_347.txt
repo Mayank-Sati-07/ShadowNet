@@ -1,0 +1,21 @@
+FIR No: FIR_347
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 347
+Police Station: Unknown police station
+Year: Unknown
+
+Crime records:
+- CRIME_347
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 419
+- Indian Penal Code (IPC) — Section 420
+- Indian Penal Code (IPC) — Section 463
+- Indian Penal Code (IPC) — Section 468
+- Indian Penal Code (IPC) — Section 471
+- Indian Penal Code (IPC) — Section 120B
+
+Record completeness: 25.0%
+Average extraction confidence: 0.9663
+Low confidence flag: False

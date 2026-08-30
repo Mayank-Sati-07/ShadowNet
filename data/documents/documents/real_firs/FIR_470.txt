@@ -1,0 +1,21 @@
+FIR No: FIR_470
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 470
+Police Station: Lake Town
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0230
+
+Crime records:
+- CRIME_470
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 279
+- Indian Penal Code (IPC) — Section 338
+- Indian Penal Code (IPC) — Section 427
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8123
+Low confidence flag: False

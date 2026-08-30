@@ -1,0 +1,22 @@
+FIR No: FIR_166
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 166
+Police Station: Baguiati
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0138
+
+Crime records:
+- CRIME_166
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 307
+- Indian Penal Code (IPC) — Section 325
+- Indian Penal Code (IPC) — Section 341
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9004
+Low confidence flag: False

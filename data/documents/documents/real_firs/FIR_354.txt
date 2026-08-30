@@ -1,0 +1,16 @@
+FIR No: FIR_354
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 354
+Police Station: Unknown police station
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0172
+
+Crime records:
+- CRIME_354
+
+Record completeness: 50.0%
+Average extraction confidence: 0.9259
+Low confidence flag: False

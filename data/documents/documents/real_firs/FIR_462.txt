@@ -1,0 +1,16 @@
+FIR No: FIR_462
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 462
+Police Station: Unknown police station
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0049
+
+Crime records:
+- CRIME_462
+
+Record completeness: 25.0%
+Average extraction confidence: 0.9308
+Low confidence flag: False

@@ -1,0 +1,16 @@
+FIR No: FIR_139
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 139
+Police Station: Baguiati
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0423
+
+Crime records:
+- CRIME_139
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9087
+Low confidence flag: False

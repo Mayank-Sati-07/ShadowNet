@@ -1,0 +1,23 @@
+FIR No: FIR_30
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 30
+Police Station: Airport
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0430
+
+Crime records:
+- CRIME_30
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 420
+- Indian Penal Code (IPC) — Section 120B
+
+Record completeness: 75.0%
+Average extraction confidence: 0.8287
+Low confidence flag: False

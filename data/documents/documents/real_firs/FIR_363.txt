@@ -1,0 +1,16 @@
+FIR No: FIR_363
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 363
+Police Station: Eco Park
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0057
+
+Crime records:
+- CRIME_363
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9051
+Low confidence flag: False

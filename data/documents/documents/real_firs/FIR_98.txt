@@ -1,0 +1,23 @@
+FIR No: FIR_98
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 98
+Police Station: Airport
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0308
+
+Crime records:
+- CRIME_98
+
+Statutes / sections:
+- (B)/120(B)/34 Ipc — Section 323
+- (B)/120(B)/34 Ipc — Section 325
+- (B)/120(B)/34 Ipc — Section 354
+- (B)/120(B)/34 Ipc — Section 379
+- (B)/120(B)/34 Ipc — Section 494
+
+Record completeness: 100.0%
+Average extraction confidence: 0.874
+Low confidence flag: False

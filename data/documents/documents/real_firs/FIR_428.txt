@@ -1,0 +1,22 @@
+FIR No: FIR_428
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 428
+Police Station: Unknown police station
+Year: 2019
+
+Persons / linked FIR subjects:
+- FIR_P_0395
+
+Crime records:
+- CRIME_428
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 325
+- Indian Penal Code (IPC) — Section 341
+- Indian Penal Code (IPC) — Section 506
+
+Record completeness: 75.0%
+Average extraction confidence: 0.7623
+Low confidence flag: True

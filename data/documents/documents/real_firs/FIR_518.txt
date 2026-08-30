@@ -1,0 +1,16 @@
+FIR No: FIR_518
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 518
+Police Station: Unknown police station
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0208
+
+Crime records:
+- CRIME_518
+
+Record completeness: 25.0%
+Average extraction confidence: 0.7822
+Low confidence flag: False

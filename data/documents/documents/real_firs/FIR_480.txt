@@ -1,0 +1,22 @@
+FIR No: FIR_480
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 480
+Police Station: Lake Town
+Year: 2020
+
+Persons / linked FIR subjects:
+- FIR_P_0032
+
+Crime records:
+- CRIME_480
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 419
+- Indian Penal Code (IPC) — Section 468
+- Indian Penal Code (IPC) — Section 120B
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8301
+Low confidence flag: False

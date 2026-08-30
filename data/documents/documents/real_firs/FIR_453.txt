@@ -1,0 +1,19 @@
+FIR No: FIR_453
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 453
+Police Station: Electronics Complex
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0460
+
+Crime records:
+- CRIME_453
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 366
+
+Record completeness: 100.0%
+Average extraction confidence: 0.963
+Low confidence flag: False

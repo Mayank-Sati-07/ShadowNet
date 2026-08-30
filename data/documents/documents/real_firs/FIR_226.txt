@@ -1,0 +1,22 @@
+FIR No: FIR_226
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 226
+Police Station: Baguiati
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0413
+
+Crime records:
+- CRIME_226
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 323
+- Indian Penal Code (IPC) — Section 506
+- Indian Penal Code (IPC) — Section 498A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8637
+Low confidence flag: False

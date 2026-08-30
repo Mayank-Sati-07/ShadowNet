@@ -1,0 +1,21 @@
+FIR No: FIR_161
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 161
+Police Station: Baguiati
+Year: 2019
+
+Persons / linked FIR subjects:
+- FIR_P_0266
+
+Crime records:
+- CRIME_161
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 279
+- Indian Penal Code (IPC) — Section 338
+- Indian Penal Code (IPC) — Section 427
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9524
+Low confidence flag: False

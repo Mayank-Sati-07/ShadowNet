@@ -1,0 +1,22 @@
+FIR No: FIR_132
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 132
+Police Station: Baguiati
+Year: 2019
+
+Persons / linked FIR subjects:
+- FIR_P_0480
+
+Crime records:
+- CRIME_132
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 406
+- Indian Penal Code (IPC) — Section 408
+- Indian Penal Code (IPC) — Section 409
+- Indian Penal Code (IPC) — Section 420
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9108
+Low confidence flag: False

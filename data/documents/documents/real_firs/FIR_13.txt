@@ -1,0 +1,20 @@
+FIR No: FIR_13
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 13
+Police Station: Airport
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0449
+
+Crime records:
+- CRIME_13
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 279
+- Indian Penal Code (IPC) — Section 338
+
+Record completeness: 100.0%
+Average extraction confidence: 0.8524
+Low confidence flag: True

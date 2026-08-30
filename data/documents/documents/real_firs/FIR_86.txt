@@ -1,0 +1,26 @@
+FIR No: FIR_86
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 86
+Police Station: Airport
+Year: 2018
+
+Persons / linked FIR subjects:
+- FIR_P_0143
+
+Crime records:
+- CRIME_86
+
+Statutes / sections:
+- Pc — Section 34
+- Pc — Section 323
+- Pc — Section 324
+- Pc — Section 327
+- Pc — Section 380
+- Pc — Section 451
+- Pc — Section 506
+- Pc — Section 120B
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9028
+Low confidence flag: False

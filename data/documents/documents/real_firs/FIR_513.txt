@@ -1,0 +1,21 @@
+FIR No: FIR_513
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 513
+Police Station: Nscbi Airport
+Year: 2017
+
+Persons / linked FIR subjects:
+- FIR_P_0304
+
+Crime records:
+- CRIME_513
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 465
+- Indian Penal Code (IPC) — Section 468
+- Indian Penal Code (IPC) — Section 471
+
+Record completeness: 100.0%
+Average extraction confidence: 0.7985
+Low confidence flag: True

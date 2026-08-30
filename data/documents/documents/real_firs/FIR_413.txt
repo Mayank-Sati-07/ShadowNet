@@ -1,0 +1,24 @@
+FIR No: FIR_413
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 413
+Police Station: Eco Park
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0003
+
+Crime records:
+- CRIME_413
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 34
+- Indian Penal Code (IPC) — Section 363
+- Indian Penal Code (IPC) — Section 364
+- Indian Penal Code (IPC) — Section 365
+- Indian Penal Code (IPC) — Section 368
+- Indian Penal Code (IPC) — Section 364A
+
+Record completeness: 75.0%
+Average extraction confidence: 0.9115
+Low confidence flag: False

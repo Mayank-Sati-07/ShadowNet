@@ -1,0 +1,16 @@
+FIR No: FIR_364
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 364
+Police Station: Unknown police station
+Year: Unknown
+
+Persons / linked FIR subjects:
+- FIR_P_0147
+
+Crime records:
+- CRIME_364
+
+Record completeness: 25.0%
+Average extraction confidence: 0.9553
+Low confidence flag: False

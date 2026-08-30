@@ -1,0 +1,21 @@
+FIR No: FIR_202
+
+Source: public FIR dataset (structured record rendered for M8 NLP testing).
+Image ID: 202
+Police Station: Baguiati
+Year: 2021
+
+Persons / linked FIR subjects:
+- FIR_P_0021
+
+Crime records:
+- CRIME_202
+
+Statutes / sections:
+- Indian Penal Code (IPC) — Section 279
+- Indian Penal Code (IPC) — Section 338
+- Indian Penal Code (IPC) — Section 304A
+
+Record completeness: 100.0%
+Average extraction confidence: 0.9416
+Low confidence flag: False
